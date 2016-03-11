@@ -69,7 +69,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:#A43B40;margin-bottom: 0;">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -77,14 +77,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><font size="6">Savo</font></a>
+                <a class="navbar-brand" href="index.html"><font size="6" color="#FFFFFF">Savo</font></a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> &nbsp&nbsp Anna &nbsp&nbsp<i class="fa fa-caret-down"></i>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><font color="#FFFFFF">
+                    &nbsp&nbsp Anna &nbsp&nbsp</font><i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
@@ -122,10 +122,10 @@
                             <a href="index.html" class="text-center">Logs<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="panels-wells.html" class="text-right">Rewards</a>
+                                    <a href="panels-wells.html" class="text-left">Rewards</a>
                                 </li>
                                 <li>
-                                    <a href="panels-wells.html" class="text-right">Trips</a>
+                                    <a href="panels-wells.html" class="text-left">Trips</a>
                                 </li>
                             </ul>
                         </li>
@@ -138,34 +138,36 @@
                         <br>
 
                         <li>
+                             <div class="text-center">
+
+                             <font size="4">Leaderboard</font></div>
                             <!-- <div class="text-center"><font size="5">Leaderboard</font></div> -->
-                            <table style="width: 80%;" class="text-center limit-table-col-30 table  table-striped  table-condensed center-table table-bordered">
+                            <table style="width: 80%;"  class="limit-table-col-30 table  table-striped  table-condensed center-table">
                                     <thead>
                                       <tr>
-                                        <th  class="text-center"><font size="5">Leaderboard</font></th>
+                                        <th  class="text-center">Name</th>
+                                        <th class="text-center">Points</th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
                                         <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Uber</td>
-                                        
-                                      </tr>
-                                      <tr>
-                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> E & Y</td>
-                                        
+                                        <td>40000</td>
                                       </tr>
                                       <tr>
                                         <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Bain</td>
-                                        
+                                        <td>30000</td>
                                       </tr>
                                       <tr>
-                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Ola</td>
-                                        
+                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> E And Y</td>
+                                        <td>21000</td>
                                       </tr>
-                                      <tr>
-                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Flipkart</td>
-                                        
+                                                                          <tr>
+                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Uber</td>
+                                        <td>40000</td>
                                       </tr>
+
+                                  
                                     </tbody>
                                   </table>
                         </li>
@@ -186,38 +188,86 @@
                     <!-- /.col-lg-12 -->
                 </div>
                 <div id="outer" style="width: 100%">  
-                    <div class="col-lg-8" style="margin: 0 auto;">
-                        <table class="table table-striped table-bordered table-hover text-center" id="dataTables-example2" style="width:100%;">
+                    <div class="col-lg-8" style="margin-left: 130px">
+                        <table class="table table-hover text-center" align="center" id="dataTables-example2" style="font-size:14px;width:100%;">
                             <thead>
-                                <tr class="text-center">
-                                    <th class="text-center"><font size="4">Coupons Claimed</font></th>
-                                    <th class="text-center"><font size="4">Cash</font></th>
+                                <tr class="text-center" style="background-color: #A43B40;">
+                                    <th class="text-center"><font size="2px" color="#FFFFFF">Coupons Claimed</font></th>
+                                    <th class="text-center"><font size="2px" color="#FFFFFF">Cash</font></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><font size="4">Amazon</font></td>
-                                    <td><font size="4"><i class="fa fa-inr"></i>2500</td>
+                                                                <tr>
+                                    <td><font size="2px">Amazon</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>2500</td>
                                 </tr>
                                 <tr>
-                                    <td><font size="4">Ebay</font></td>
-                                    <td><font size="4"><i class="fa fa-inr"></i>10290</td>
+                                    <td><font size="2px">Ebay</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>10290</td>
                                 </tr>
                                 <tr>
-                                    <td><font size="4">Flipkart</font></td>
-                                    <td><font size="4"><i class="fa fa-inr"></i>3000</td>
+                                    <td><font size="2px">Flipkart</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>3000</td>
                                 </tr>
                                 <tr>
-                                    <td><font size="4">Snapdeal</font></td>
-                                    <td><font size="4"><i class="fa fa-inr"></i>20000</td>
+                                    <td><font size="2px">Snapdeal</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>20000</td>
                                 </tr>
                                 <tr>
-                                    <td><font size="4">Croma</font></td>
-                                    <td><font size="4"><i class="fa fa-inr"></i>2000</td>
+                                    <td><font size="2px">Croma</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>2000</td>
                                 </tr>
                                 <tr>
-                                    <td><font size="4">Jabong</font></td>
-                                    <td><font size="4"><i class="fa fa-inr"></i>10000</td>
+                                    <td><font size="2px">Jabong</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>10000</td>
+                                </tr>
+                                                                <tr>
+                                    <td><font size="2px">Amazon</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>2500</td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2px">Ebay</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>10290</td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2px">Flipkart</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>3000</td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2px">Snapdeal</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>20000</td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2px">Croma</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>2000</td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2px">Jabong</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>10000</td>
+                                </tr>
+                                                                <tr>
+                                    <td><font size="2px">Amazon</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>2500</td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2px">Ebay</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>10290</td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2px">Flipkart</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>3000</td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2px">Snapdeal</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>20000</td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2px">Croma</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>2000</td>
+                                </tr>
+                                <tr>
+                                    <td><font size="2px">Jabong</font></td>
+                                    <td><font size="2px"><i class="fa fa-inr"></i>10000</td>
                                 </tr>
                             </tbody>
                         </table>
