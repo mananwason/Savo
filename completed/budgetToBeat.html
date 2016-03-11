@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+.center-table
+{
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.limit-table-col-30
+{
+  width:30%;
+}
+.full-width-tabs > ul.nav.nav-tabs {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.full-width-tabs > ul.nav.nav-tabs > li {
+    float: none;
+    display: table-cell;
+}
+.full-width-tabs > ul.nav.nav-tabs > li > a {
+    text-align: center;
+}
+</style>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><font size="6">Savo</font></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> &nbsp&nbsp Anna &nbsp&nbsp<i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <br>
+                            <br>
+                            <div class="text-center"><font size="7">40</font></div>
+                            <div class="text-center"><font size="4">points</font></div>
+                            <br>
+                            <br>
+                            <!-- <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a> -->
+                        </li>
+                        <li>
+                            <a href="index.html"><div class="text-center">My Trips</div></a>
+                        </li>
+                        <li>
+                            <a href="index.html"><div class="text-center">Rewards</div></a>
+                        </li>
+                        <li>
+                            <a href="index.html"><div class="text-center">Settings</div></a>
+                        </li>
+                        <li>
+                            <a href="index.html"><div class="text-center">Help</div></a>
+                        </li>
+                        <br>
+
+                        <li>
+                            <div class="text-center"><font size="5">Leaderboard</font></div>
+                            <table style="width: 80%;" class="text-center limit-table-col-30 table  table-striped  table-condensed center-table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th  class="text-center">Name</th>
+                                        <th class="text-center">Points</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Anna</td>
+                                        <td>40000</td>
+                                      </tr>
+                                      <tr>
+                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Debbie</td>
+                                        <td>30000</td>
+                                      </tr>
+                                      <tr>
+                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> John</td>
+                                        <td>21000</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </nav>
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Budget To Beat &nbsp&nbsp<i class="fa fa-caret-right"></i> &nbsp&nbsp<i class="fa fa-inr"></i> 42,630</h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <br>
+                <div class="panel panel-default">
+                        
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="tabbable full-width-tabs">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#home" data-toggle="tab">Travel Details</a>
+                                    </li>
+                                    <li><a href="#profile" data-toggle="tab">Accomodation</a>
+                                    </li>
+                                    <li><a href="#messages" data-toggle="tab">Car</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="home">
+                                        <br>
+                                        <table class="table table-striped table-bordered table-hover text-center" id="dataTables-example">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th class="text-center">Departure</th>
+                                                    <th class="text-center">Arrival</th>
+                                                    <th class="text-center">Duration</th>
+                                                    <th class="text-center">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><img src="../IndiGo.jpg" class="img-circle" alt="Cinque Terre" width="40" height="40">&nbsp&nbsp&nbsp21:15 - Mumbai</td>
+                                                    <td>23:40 - Delhi</td>
+                                                    <td>2h 25m - Non-stop</td>
+                                                    <td><i class="fa fa-inr"></i>3,469 &nbsp<button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="../GoAir.png" class="img-circle" alt="Cinque Terre" width="40" height="40">&nbsp&nbsp&nbsp21:15 - Mumbai</td>
+                                                    <td>23:40 - Delhi</td>
+                                                    <td>2h 25m - Non-stop</td>
+                                                    <td><i class="fa fa-inr"></i>3,469 &nbsp<button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="../IndiGo.jpg" class="img-circle" alt="Cinque Terre" width="40" height="40">&nbsp&nbsp&nbsp21:15 - Mumbai</td>
+                                                    <td>23:40 - Delhi</td>
+                                                    <td>2h 25m - Non-stop</td>
+                                                    <td><i class="fa fa-inr"></i>3,469 &nbsp<button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <!-- <tr>
+                                                    <td><img src="../GoAir.png" class="img-circle" alt="Cinque Terre" width="40" height="40">&nbsp&nbsp&nbsp21:15 - Mumbai</td>
+                                                    <td>23:40 - Delhi</td>
+                                                    <td>2h 25m - Non-stop</td>
+                                                    <td><i class="fa fa-inr"></i>3,469 &nbsp<button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="../IndiGo.jpg" class="img-circle" alt="Cinque Terre" width="40" height="40">&nbsp&nbsp&nbsp21:15 - Mumbai</td>
+                                                    <td>23:40 - Delhi</td>
+                                                    <td>2h 25m - Non-stop</td>
+                                                    <td><i class="fa fa-inr"></i>3,469 &nbsp<button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="../GoAir.png" class="img-circle" alt="Cinque Terre" width="40" height="40">&nbsp&nbsp&nbsp21:15 - Mumbai</td>
+                                                    <td>23:40 - Delhi</td>
+                                                    <td>2h 25m - Non-stop</td>
+                                                    <td><i class="fa fa-inr"></i>3,469 &nbsp<button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="../IndiGo.jpg" class="img-circle" alt="Cinque Terre" width="40" height="40">&nbsp&nbsp&nbsp21:15 - Mumbai</td>
+                                                    <td>23:40 - Delhi</td>
+                                                    <td>2h 25m - Non-stop</td>
+                                                    <td><i class="fa fa-inr"></i>3,469 &nbsp<button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="../GoAir.png" class="img-circle" alt="Cinque Terre" width="40" height="40">&nbsp&nbsp&nbsp21:15 - Mumbai</td>
+                                                    <td>23:40 - Delhi</td>
+                                                    <td>2h 25m - Non-stop</td>
+                                                    <td><i class="fa fa-inr"></i>3,469 &nbsp<button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr> -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile">
+                                        <br>
+                                        <table class="table table-striped table-bordered table-hover text-center" id="dataTables-example2">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th class="text-center">Hotel</th>
+                                                    <th class="text-center">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><font size="4">Excelsior</font><br>Earn 32 points</td>
+                                                    <td><font size="4"><i class="fa fa-inr"></i>5000/-<br>4 x <i class="fa fa-inr"></i>5000 = <i class="fa fa-inr"></i>20000</font><button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><font size="4">Hotel Taj Mahal</font><br>Earn 20 points</td>
+                                                    <td><font size="4"><i class="fa fa-inr"></i>4500/-<br>4 x <i class="fa fa-inr"></i>4500 = <i class="fa fa-inr"></i>18000</font><button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><font size="4">Navotal</font><br>Earn 40 points</td>
+                                                    <td><font size="4"><i class="fa fa-inr"></i>5000/-<br>4 x <i class="fa fa-inr"></i>5000 = <i class="fa fa-inr"></i>20000</font><button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="messages">
+                                        <br>
+                                        <table class="table table-striped table-bordered table-hover text-center" id="dataTables-example3">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th class="text-center">Type</th>
+                                                    <th class="text-center">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><font size="4">Uber Prime</font></td>
+                                                    <td><font size="4"><i class="fa fa-inr"></i>200<br>4 x <i class="fa fa-inr"></i>200 = <i class="fa fa-inr"></i>800</font><button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><font size="4">Ola Share</font></td>
+                                                    <td><font size="4"><i class="fa fa-inr"></i>160<br>4 x <i class="fa fa-inr"></i>160 = <i class="fa fa-inr"></i>640</font><button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><font size="4">Ola Mini</font></td>
+                                                    <td><font size="4"><i class="fa fa-inr"></i>160<br>4 x <i class="fa fa-inr"></i>160 = <i class="fa fa-inr"></i>640</font><button type="button" class="btn btn-primary" style="float: right;">Book</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="settings">
+                                        <h4>Settings Tab</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+     <script>
+    $(document).ready( function () {
+        $('#dataTables-example').DataTable();
+    } );
+    $(document).ready( function () {
+        $('#dataTables-example2').DataTable();
+    } );
+    $(document).ready( function () {
+        $('#dataTables-example3').DataTable();
+    } );
+    </script>
+</body>
+
+</html>
