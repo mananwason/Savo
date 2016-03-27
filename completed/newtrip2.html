@@ -109,10 +109,10 @@
                             <!-- <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a> -->
                         </li>
                         <li>
-                            <a href="myTrips.html"><div class="text-center">My Trips</div></a>
+                            <a href="./myTrips.html"><div class="text-center">My Trips</div></a>
                         </li>
                         <li>
-                            <a href="index.html"><div class="text-center">Rewards</div></a>
+                            <a href="./rewards.html"><div class="text-center">Rewards</div></a>
                         </li>
                         <li>
                             <a href="index.html"><div class="text-center">Settings</div></a>
@@ -189,68 +189,129 @@
                                 <div class="tab-content">
                                     <div class="tab-pane fade in active" id="home">
                                         <br>
-                                        <img src="../flights.png" alt="Flights" style="width:80%;padding-left:130px;">
-                                        <!--<form role="form">
-                                            <div class="form-group" style="float:left">
-                                              <label for="First_Name">From:</label>
-                                              <input name="first_name" id="First_Name"  type="text" />
-                                              <label for="Name">To:</label>
-                                              <input name="last_name" id="Last_Name"  type="text" /> 
-
+                                        <!--<img src="../flights.png" alt="Flights" style="width:80%;padding-left:130px;"> -->
+                                        <form role="form">
+                                            <div class="form-group">
+                                              <div class="col-md-10 col-md-offset-4">
+                                              <div class="radio">
+                                                <label><input type="radio" name="optradio">Round Trip</label>
+                                                <label><input type="radio" name="optradio">One-way</label>
+                                              </div>
+                                              </div>
+                                              <div class="col-md-8 col-md-offset-2">
+                                              <div class="col-sm-6">
+                                              <div class="form-group">
+                                                <label for="from">From</label>
+                                                <input type="text" class="form-control" id="from" placeholder="City name or airport">
+                                                <br>
+                                                <label for="leave">Leave</label>
+                                                <div class="form-group">
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                    <input type='text' class="form-control" />
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              </div>
+                                              <script type="text/javascript">
+                                                $(function () {
+                                                $('#datetimepicker1').datetimepicker();
+                                                });
+                                              </script>
+                                              <div class="col-sm-6">
+                                              <div class="form-group">
+                                                <label for="to">To</label>
+                                                <input type="text" class="form-control" id="usr" placeholder="City name or airport">
+                                                <br>
+                                                <label for="return">Return</label>
+                                                <div class="form-group">
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                    <input type='text' class="form-control" />
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              </div>
+                                              </div>
                                             </div>
-                                        </form> -->
+                                        </form>
                                     </div>
                                     <div class="tab-pane fade" id="profile">
                                         <br>
-                                        <img src="../hotel.png" alt="Flights" style="width:80%;padding-left:130px;">
-                                        <!-- <table class="table table-hover text-center" id="dataTables-example2">
-                                            <thead>
-                                                <tr class="text-center">
-                                                    <th class="text-center">Hotel</th>
-                                                    <th class="text-center">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><font size="4">Excelsior</font><br>Earn 32 points</td>
-                                                    <td><font size="4">4 x <i class="fa fa-inr"></i>5000 = <i class="fa fa-inr"></i>20000</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><font size="4">Hotel Taj Mahal</font><br>Earn 20 points</td>
-                                                    <td><font size="4">4 x <i class="fa fa-inr"></i>4500 = <i class="fa fa-inr"></i>18000</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><font size="4">Navotal</font><br>Earn 40 points</td>
-                                                    <td><font size="4">4 x <i class="fa fa-inr"></i>5000 = <i class="fa fa-inr"></i>20000</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
-                                            </tbody>
-                                        </table> -->
+                                        <form role="form">
+                                            <div class="form-group">
+                                              <div class="col-md-8 col-md-offset-2">
+                                              <div class="form-group">
+                                                <label for="where">Where</label>
+                                                <input type="text" class="form-control" id="usr">
+                                              </div>
+                                              </div>
+                                              <div class="col-md-8 col-md-offset-2">
+                                              <div class="form-group form-inline">
+                                                <label for="checkin">Check In</label>
+                                                <div class="form-group">
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                    <input type='text' class="form-control" />
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                    </div>
+                                                <label for="checkout">Check Out</label>
+                                                <div class="form-group">
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                    <input type='text' class="form-control" />
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                    </div>
+                                                </div>                                                
+                                              </div>
+                                              </div>
+                                              </div>
+                                            </div>
+                                        </form>
+
                                     </div>
                                     <div class="tab-pane fade" id="messages">
-                                        <br>
-                                        <!-- <table class="table table-hover text-center" id="dataTables-example3">
-                                            <thead>
-                                                <tr class="text-center">
-                                                    <th class="text-center">Type</th>
-                                                    <th class="text-center">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><font size="4">Uber Prime</font></td>
-                                                    <td><font size="4">4 x <i class="fa fa-inr"></i>200 = <i class="fa fa-inr"></i>800</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><font size="4">Ola Share</font></td>
-                                                    <td><font size="4">4 x <i class="fa fa-inr"></i>160 = <i class="fa fa-inr"></i>640</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><font size="4">Ola Mini</font></td>
-                                                    <td><font size="4">4 x <i class="fa fa-inr"></i>160 = <i class="fa fa-inr"></i>640</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
-                                            </tbody>
-                                        </table> -->
-                                        <img src="../car.png" alt="Flights" style="width:80%;padding-left:130px;">
+                                        <!--<img src="../car.png" alt="Flights" style="width:80%;padding-left:130px;">-->
+                                         <form role="form">
+                                            <div class="form-group">
+                                              <div class="col-md-8 col-md-offset-2">
+                                              <div class="form-group">
+                                                <label for="pickupLoc">Pick up Location</label>
+                                                <input type="text" class="form-control" id="usr">
+                                              </div>
+                                              </div>
+                                              <div class="col-md-8 col-md-offset-2">
+                                              <div class="col-md-6">
+                                                <label for="PickupTime">Pickup Date and Time</label>
+                                                <div class="form-group">
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                    <input type='text' class="form-control" />
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                <label for="DropoffTime">Drop Off Date and Time</label>
+                                                <div class="form-group">
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                    <input type='text' class="form-control" />
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                    </div>
+                                                </div> 
+                                                </div>                                               
+                                              </div>
+                                            </div>
+                                        </form>                           
                                     </div>
                                     <div class="tab-pane fade" id="settings">
                                         <h4>Settings Tab</h4>
