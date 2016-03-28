@@ -5,17 +5,19 @@
  */
 
 body {
-    background-color: #f8f8f8;
+    background-color: white;
 }
 
 #wrapper {
     width: 100%;
+    border: 0;
 }
 
 #page-wrapper {
     padding: 0 15px;
     min-height: 568px;
     background-color: #fff;
+    border: 0;
 }
 
 @media(min-width:768px) {
@@ -24,6 +26,7 @@ body {
         margin: 0 0 0 250px;
         padding: 0 30px;
         border-left: 1px solid #e7e7e7;
+        border: 0;
     }
 }
 
