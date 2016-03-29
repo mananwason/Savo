@@ -6,6 +6,8 @@ Rails3MongoidDevise::Application.routes.draw do
 
   get 'rewards' => "home#rewards"
 
+  get 'myTrips' => "home#myTrips"
+
   post 'updateRewardPoints' => "home#updateRewardPoints"
 
   devise_for :users

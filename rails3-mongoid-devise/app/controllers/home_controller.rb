@@ -20,7 +20,6 @@ class HomeController < ApplicationController
   end
 
   def updateRewardPoints
-
   	user = User.find(current_user.id);
 
 	totalPointsRedeemed = convertToNumber(params[:cash]) + convertToNumber(params[:nike]) + convertToNumber(params[:croma]) + convertToNumber(params[:adidas]) + convertToNumber(params[:ebay]) + convertToNumber(params[:sodexo]) + convertToNumber(params[:snapdeal]) + convertToNumber(params[:jabong]); 
@@ -32,6 +31,13 @@ class HomeController < ApplicationController
 		user.update(points: pointsLeft)
 	end
 	render "rewards"     
+  end
+
+  def myTrips
+  	@user = User.find(current_user.id);
+  	@todayDate = Date.today;
+  	@trips = @user.trips;
+  	render "myTrips"
   end
 
 end
