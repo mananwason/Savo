@@ -11,6 +11,7 @@ class HomeController < ApplicationController
 
   def rewards
   	@users = User.all 
+  	@user = User.find(current_user.id)
 	render "rewards" 
   end
 
