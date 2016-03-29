@@ -10,12 +10,15 @@
     <%= yield(:head) %>
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
+   <div id="wrapper">
+    <%= render 'layouts/sidenavigation' %>
     <div id="main" role="main">
         <%= yield %>
-      </div>
-      <div id="container" class="container">
+    </div>
+      <!-- <div id="container" class="container"> -->
       <footer>
       </footer>
-    </div> <!--! end of #container -->
+    </div>
+<!--     </div> ! end of #container  -->
   </body>
 </html>
