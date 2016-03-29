@@ -111,7 +111,7 @@
 
                         </ul>
                     </div>
-                        <div class="text-center" style='border-radius: 0; pointer-events: none;' >
+                        <div class="text-center" style='border-radius: 0;' >
                             <div class="panel panel-default">
                                 <div class="panel-heading" style='border-radius: 0;'><span class="glyphicon glyphicon-flag" ></span>    Leaderboard</div>
                                 <ul class="nav">
@@ -130,15 +130,44 @@
             <div class="container-fluid">
                 <div class="row">
                     <div>
-                        <h1 class="page-header">Help<a href="./newtrip2.html" role="button" class="btn btn-success btn-lg" style="float: right;"><i class="fa fa-plus-square"></i> New Trip</a></h1>
+                        <h1 class="page-header">Personal Account Details<a href="./newtrip2.html" role="button" class="btn btn-success btn-lg" style="float: right;"><i class="fa fa-plus-square"></i> New Trip</a></h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
                 <div class="col-lg-6 col-lg-offset-2">
-                
+                <div class="panel panel-default">
+                    <%= form_tag("/updateSettings", method: :post) do%>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <form role="form">
+                                <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Anna Karenina">
+                                        <%= text_field_tag 'name',nil ,:placeholder => "Anna Karenina" %>
+                                            <br>
+                                        <label for="gender">Gender</label>
+                                        <input type="text" class="form-control" id="gender">
+                                        <%= text_field_tag 'gender',nil ,:placeholder => "Female" %>
+                                            <br>
+                                        <label for="email">Email Address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="anna@bain.com" disabled>
+                                            <br>
+                                
+                                    <label for="Designation">Designation</label>
+                                    <%= text_field_tag 'designation',nil ,:placeholder => "Junior Manager" %>
+                                    <br>
+                                    <label for="HotelCat">Hotel Category</label>
+                                    <input type="text" class="form-control" id="HotelCat" placeholder="3 Star" disabled>
+                                    <br>
+                                    <label for="FlightCat">Flight Category</label>
+                                    <input type="text" class="form-control" id="FlightCat" placeholder="Economy" disabled >
+                                </div>
+                            </div>
+                        </div>
                     <div class="text-center">
-                    <!--add mailto@savo.com-->
-                    <a href="./budgetToBeat.html"><button type="button" class="btn btn-primary btn-lg">Contact Us</button></a>
+                    <%= submit_tag 'Request Profile Update'%>
+                    <!--<a href="./budgetToBeat.html"><button type="button" class="btn btn-primary btn-lg">Request Profile Update</button></a>-->
+                    <a href="./budgetToBeat.html"><button type="button" class="btn btn-success btn-lg" >Change Password</button></a>
                     </div>
 
                     </div>

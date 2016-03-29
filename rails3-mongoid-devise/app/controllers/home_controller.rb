@@ -2,8 +2,8 @@ class HomeController < ApplicationController
 
   before_filter :authenticate_user!
 
-  def index 
-  	@users = User.all @user_id = params[:id] 
+  def index
+    @users = User.all
   end
 
   def rewards

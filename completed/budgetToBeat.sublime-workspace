@@ -1,0 +1,276 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"base",
+				"basefont	Tag"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"cen",
+				"text-center"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/settings.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/signup.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/logIn.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/newtrip2.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/myTrips.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/budgetToBeat.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/dist/css/normalized.css",
+		"/home/indira/IIITD/SEM II/DHCS/savo/Savo-master/completed/budgetToBeat.html",
+		"/home/indira/IIITD/SEM II/DHCS/savo/Savo-master/completed/myTrips.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/help.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/dist/css/sb-admin-2.css",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/newtrip3.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/login1.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/bower_components/bootstrap/dist/css/bootstrap.min.css",
+		"/home/indira/tests/webscrapebook/himmat.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/bower_components/metisMenu/dist/metisMenu.css",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/testing.html",
+		"/home/indira/IIITD/SEM II/DHCS/savo/Savo-master/completed/newtrip2.html",
+		"/home/indira/IIITD/SEM II/DHCS/savo/Savo-master/completed/newTrip.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/completed/rewards.html",
+		"/home/indira/tests/webscrapebook/scrapehimmat.py",
+		"/home/indira/tests/webscrapebook/new.py",
+		"/home/indira/tests/Flaskapp/app.py",
+		"/home/indira/tests/Flaskapp/templates/landing.html",
+		"/home/indira/tests/Flaskapp/templates/landing2.html",
+		"/home/indira/IIITD/SEM II/DHCS/Savo/dist/css/timeline.css",
+		"/home/indira/tests/playstore/android-market-api-py-master/examples.py",
+		"/home/indira/tests/Flaskapp/chart2.py",
+		"/home/indira/tests/Flaskapp/templates/chart.html",
+		"/home/indira/tests/Flaskapp/static/tool/js/m_map.js",
+		"/home/indira/IIITD/precog/portalcode/ToServer/template/basic.html",
+		"/home/indira/IIITD/precog/portalcode/ToServer/template/index.html",
+		"/home/indira/tests/Flaskapp/chart.py"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"form",
+			"colo",
+			"butt",
+			"body",
+			"nav",
+			"help",
+			"nav",
+			"40",
+			"png",
+			"setti",
+			"conta",
+			"panel",
+			"body",
+			"anna",
+			"panel",
+			"body",
+			"sign",
+			"colo",
+			"MIN=\"0\" MAX=\"100\" STEP=\"1\" VALUE=\"0\" SIZE=\"6\"",
+			"TYPE=\"NUMBER\"",
+			"center",
+			"sign",
+			"center",
+			"tabs",
+			"nav",
+			"redeem",
+			"sign u",
+			".css",
+			"table",
+			"color",
+			"table",
+			"color",
+			"div",
+			"anna",
+			"nav-",
+			"logou",
+			"margin",
+			"nav",
+			"plac",
+			"redee",
+			"reward",
+			"rewar",
+			"date",
+			"script",
+			"rewards",
+			"butt",
+			"new tr",
+			"new T",
+			"leader",
+			"font-family:",
+			"font-family: ",
+			"font-fami",
+			"font-fa",
+			"font",
+			"/css",
+			"font",
+			"href",
+			".html",
+			"messages",
+			"profile",
+			"check",
+			"page",
+			".js"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"placeholder=\"Number of 1000 INR Coupons\"",
+			"type=\"text\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "budgetToBeat.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

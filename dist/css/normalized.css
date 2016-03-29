@@ -62,13 +62,13 @@ select {
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #50d07d;
+  background-color: #e67e22;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #50d07d;
+  border: 1px solid #e67e22;
   border-width: 1px 1px 3px;
   margin-bottom: 5px;
 }
