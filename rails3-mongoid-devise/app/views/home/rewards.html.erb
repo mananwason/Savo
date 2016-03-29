@@ -56,6 +56,8 @@
 
     <div id="wrapper">
 
+    <h1><%= current_user.id %></h1>
+
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;background-color: #a43b40;">
             <div class="navbar-header">
@@ -166,6 +168,10 @@
                     </div>
                 <div class="row" style='border-radius: 0;'>
                     <div class="col-lg-12">
+
+          
+                    <%= form_tag("/updateRewardPoints", method: :post) do%>
+
                         <table class="table" cellspacing="0" cellpadding="0" style="border:0;">
                         <tbody>
                           <tr style='border-radius: 0;'>
@@ -176,7 +182,7 @@
                                     </div>
                                     <div class="panel-footer" style="min-height: 73px">
                                         <label for="usr">Max(<i class="fa fa-inr"></i>500)</label>&nbsp<br>
-                                          <INPUT TYPE="NUMBER" MIN="0" MAX="500" STEP="1" VALUE="6" SIZE="6">
+                                          <%= number_field_tag 'cash',nil ,:placeholder => 0 %>
                                     </div>
                                 </div>
 
@@ -188,7 +194,7 @@
                                     </div>
                                     <div class="panel-footer" style="min-height: 73px">
                                         <label for="usr">Number of <i class="fa fa-inr"></i>1000 coupons</label>&nbsp
-                                          <INPUT TYPE="NUMBER" MIN="0" MAX="100" STEP="1" VALUE="0" SIZE="6">
+                                           <%= number_field_tag 'ebay',nil ,:placeholder => 0 %>
                                     </div>
                                 </div>
                             </td>
@@ -199,7 +205,7 @@
                                     </div>
                                     <div class="panel-footer" style="min-height: 73px">
                                         <label for="usr">Number of <i class="fa fa-inr"></i>1000 coupons</label>&nbsp
-                                          <INPUT TYPE="NUMBER" MIN="0" MAX="100" STEP="1" VALUE="6" SIZE="6">
+                                           <%= number_field_tag 'nike',nil ,:placeholder => 0 %>
                                     </div>
                                 </div>
                             </td>
@@ -211,7 +217,7 @@
                                         </div>
                                         <div class="panel-footer" style="min-height: 73px">
                                             <label for="usr">Number of <i class="fa fa-inr"></i>1000 coupons</label>&nbsp
-                                              <INPUT TYPE="NUMBER" MIN="0" MAX="100" STEP="1" VALUE="0" SIZE="6">
+                                               <%= number_field_tag 'jabong',nil ,:placeholder => 0 %>
                                         </div>
                                     </div>
                                 
@@ -225,7 +231,7 @@
                                         </div>
                                         <div class="panel-footer" style="min-height: 73px">
                                             <label for="usr">Number of <i class="fa fa-inr"></i>1000 coupons</label>&nbsp
-                                              <INPUT TYPE="NUMBER" MIN="0" MAX="100" STEP="1" VALUE="6" SIZE="6">
+                                               <%= number_field_tag 'sodexo',nil ,:placeholder => 0 %>
                                         </div>
                                     </div>
                                 </td>
@@ -236,7 +242,7 @@
                                         </div>
                                         <div class="panel-footer" style="min-height: 73px">
                                             <label for="usr">Number of <i class="fa fa-inr"></i>1000 coupons</label>&nbsp
-                                              <INPUT TYPE="NUMBER" MIN="0" MAX="100" STEP="1" VALUE="0" SIZE="6">
+                                              <%= number_field_tag 'croma',nil ,:placeholder => 0 %>
                                         </div>
                                     </div>
                                 </td>
@@ -247,7 +253,7 @@
                                         </div>
                                         <div class="panel-footer" style="min-height: 73px">
                                             <label for="usr">Number of <i class="fa fa-inr"></i>1000 coupons</label>&nbsp
-                                              <INPUT TYPE="NUMBER" MIN="0" MAX="100" STEP="1" VALUE="0" SIZE="6">
+                                               <%= number_field_tag 'adidas',nil ,:placeholder => 0 %>
                                         </div>
                                     </div>
                                     
@@ -259,7 +265,7 @@
                                         </div>
                                         <div class="panel-footer" style="min-height: 73px">
                                             <label for="usr">Number of <i class="fa fa-inr"></i>1000 coupons</label>&nbsp
-                                              <INPUT TYPE="NUMBER" MIN="0" MAX="100" STEP="1" VALUE="0" SIZE="6">
+                                               <%= number_field_tag 'snapdeal',nil ,:placeholder => 0 %>
                                         </div>
                                     </div>
                                 </td>
@@ -267,12 +273,14 @@
                         </tbody>
 
                         </table>
+                        
                         <div>
-                        <button type="button" class="btn btn-primary btn-lg" style="width: 280px; margin-right: 10px; float: right;">Redeem</button>
+                        <%= submit_tag 'Redeem'%>
+                <!--         <button type="button" class="btn btn-primary btn-lg" style="width: 280px; margin-right: 10px; float: right;">Redeem</button> -->
                         </div>
                     </div>
                 </div>
-                
+                <% end %>
                 <!-- /.row -->
             </div>
             
