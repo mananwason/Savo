@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+.center-table
+{
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.limit-table-col-30
+{
+  width:30%;
+}
+.full-width-tabs > ul.nav.nav-tabs {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.full-width-tabs > ul.nav.nav-tabs > li {
+    float: none;
+    display: table-cell;
+}
+.full-width-tabs > ul.nav.nav-tabs > li > a {
+    text-align: center;
+}
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="overflow-x: hidden; background-color: white;">
+
+
+    <div id="wrapper">
+        <!-- Navigation -->
+                <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:#A43B40;margin-bottom: 0; padding:0px 0px 0px 0px;z-index: 1; border-radius: 0;position:relative !important">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a href="./myTrips.html"><img src="./Savo_logo.png"></a>
+            </div>       
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 10px">
+            <li><a href="#" style="pointer-events: none;"><font color="white">Anna</font></a></li>
+            <li><a href="./logIn.html"><span class="glyphicon glyphicon-log-in" style="color:white"></span> <font color="white">Log out</font></a></li>
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation" style="background-color: white">
+                <!--<div class="sidebar-nav navbar-collapse">-->
+                    <div class="panel panel-default">
+                        <ul class="nav"  id="side-menu">
+                            <li>
+                                <br>
+                                <br>
+                                <div class="text-center"><font size="7" color="#A43B40">40</font></div>
+                                <div class="text-center"><font size="4" color="#A43B40">points</font></div>
+                                <br>
+                                <br>
+                            <!-- <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a> -->
+                            </li>
+                            <li>
+                                <a href="./myTrips.html"><div class="text-center">My Trips</div></a>
+                            </li>
+                            <li>
+                                <a href="./rewards.html"><div class="text-center">Rewards</div></a>
+                            </li>
+                            <li>
+                                <a href="./settings.html"><div class="text-center">Settings</div></a>
+                            </li>
+                            <li>
+                                <a href="./help.html"><div class="text-center">Help</div></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                        <div class="text-center" style='border-radius: 0;' >
+                            <div class="panel panel-default">
+                                <div class="panel-heading" style='border-radius: 0;'><span class="glyphicon glyphicon-flag" ></span>    Leaderboard</div>
+                                <ul class="nav">
+                                <li><a><div class="text-center"><span class="glyphicon glyphicon-star" style="color:black"></span>      <font color="black">Anna Karenina</font><br><font color="#A43B40">5000</font></div></a></li>
+                                <li><a><div class="text-center"><span class="glyphicon glyphicon-star-empty" style="color:black"></span>    <font color="black">Dave Ebert</font><br><font color="#A43B40">4200</font></div></a></li>
+                                <li><a><div class="text-center"><span class="glyphicon glyphicon-star-empty" style="color:black"></span>    <font color="black">Chris Hayes</font><br><font color="#A43B40">3900</font></div></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                <!--</div>-->
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="page-wrapper" style='border-radius: 0;'>
+            <div class="container-fluid">
+                <div class="row">
+                    <div>
+                        <h1 class="page-header">Help<a href="./newtrip2.html" role="button" class="btn btn-success btn-lg" style="float: right;"><i class="fa fa-plus-square"></i> New Trip</a></h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <div class="col-lg-6 col-lg-offset-2">
+                
+                    <div class="text-center">
+                    <!--add mailto@savo.com-->
+                    <a href="./budgetToBeat.html"><button type="button" class="btn btn-primary btn-lg">Contact Us</button></a>
+                    </div>
+
+                    </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+     <script>
+    $(document).ready( function () {
+        $('#dataTables-example').DataTable();
+    } );
+    $(document).ready( function () {
+        $('#dataTables-example2').DataTable();
+    } );
+    $(document).ready( function () {
+        $('#dataTables-example3').DataTable();
+    } );
+    </script>
+</body>
+
+</html>

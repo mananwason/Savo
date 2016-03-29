@@ -12,10 +12,20 @@
 {
   width:30%;
 }
+.full-width-tabs > ul.nav.nav-tabs {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.full-width-tabs > ul.nav.nav-tabs > li {
+    float: none;
+    display: table-cell;
+}
+.full-width-tabs > ul.nav.nav-tabs > li > a {
+    text-align: center;
+}
 </style>
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,11 +40,18 @@
     <!-- MetisMenu CSS -->
     <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 
+    <!-- DataTables CSS -->
+    <link href="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,17 +62,18 @@
 
 </head>
 
-<body>
+<body style="overflow-x: hidden; background-color: white;">
+
 
     <div id="wrapper">
-
         <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:#A43B40;margin-bottom: 0; padding:0px 0px 0px 0px;z-index: 1; border-radius: 0;position:relative !important">
+                <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:#A43B40;margin-bottom: 0; padding:0px 0px 0px 0px;z-index: 1; border-radius: 0;position:relative !important">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                 </button>
-                <a href="./myTrips.html"><img src="Savo_logo.png"></a>
+                <a href="./myTrips.html"><img src="./Savo_logo.png"></a>
             </div>       
             <!-- /.navbar-header -->
 
@@ -66,14 +84,13 @@
             <!-- /.navbar-top-links -->
 
             <div class="navbar-default sidebar" role="navigation" style="background-color: white">
-                <div class="sidebar-nav navbar-collapse">
-                    <div style="vertical-align: top;">
+                <!--<div class="sidebar-nav navbar-collapse">-->
                     <div class="panel panel-default">
                         <ul class="nav"  id="side-menu">
                             <li>
                                 <br>
                                 <br>
-                                <div class="text-center"><font size="7" color="#A43B40">5000</font></div>
+                                <div class="text-center"><font size="7" color="#A43B40">40</font></div>
                                 <div class="text-center"><font size="4" color="#A43B40">points</font></div>
                                 <br>
                                 <br>
@@ -91,10 +108,11 @@
                             <li>
                                 <a href="./help.html"><div class="text-center">Help</div></a>
                             </li>
+
                         </ul>
-                        </div>
+                    </div>
                         <div class="text-center" style='border-radius: 0;' >
-                            <div class="panel panel-default" style='border-radius: 0;'>
+                            <div class="panel panel-default">
                                 <div class="panel-heading" style='border-radius: 0;'><span class="glyphicon glyphicon-flag" ></span>    Leaderboard</div>
                                 <ul class="nav">
                                 <li><a><div class="text-center"><span class="glyphicon glyphicon-star" style="color:black"></span>      <font color="black">Anna Karenina</font><br><font color="#A43B40">5000</font></div></a></li>
@@ -103,81 +121,53 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
+                <!--</div>-->
             </div>
         </nav>
 
         <!-- Page Content -->
-        <div id="page-wrapper">
+        <div id="page-wrapper" style='border-radius: 0;'>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">My Trips
-                        <a href="./newtrip2.html" role="button" class="btn btn-success btn-lg" style="float: right;"><i class="fa fa-plus-square"></i> New Trip</a></h1>
+                    <div>
+                        <h1 class="page-header">Personal Account Details<a href="./newtrip2.html" role="button" class="btn btn-success btn-lg" style="float: right;"><i class="fa fa-plus-square"></i> New Trip</a></h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <br>
-                <div class="row">
-                    <div class="panel panel-primary" style="border-color:#A43B40">
-                        <div class="panel-heading" style="background-color: #A43B40;border-color:#A43B40">
-                            <font size="4">Upcoming</font>
-                        </div>
+                <div class="col-lg-6 col-lg-offset-2">
+                <div class="panel panel-default">
+
+                        <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <p><font size="3">Confcosn'16</font></p>
-                            <!-- <h3>Budget to beat: <span style="float: right;">1,05,000</span></h3> -->
-                            <p><font size="3">Budget to beat: &nbsp <i class="fa fa-inr"></i> 1,05,000</font></p>
-                            <!-- <h3>Budget to beat: 1,05,000</h3> -->
-                            <table class="table table-bordered">
-                                <tbody>
-                                  <tr>
-                                    <td align="center"><font size="3">Del&nbsp<i class="fa fa-exchange fa-1g"></i>&nbspLax<br>04.05.16 - 09.05.16</font></td>
-                                    <td align="center"><font size="3">Milton Station, 3 Day<br><i class="fa fa-inr"></i> 9,000x3 = <i class="fa fa-inr"></i> 27,000</font></td>
-                                    <td align="center"><font size="3">3 Day; <i class="fa fa-inr"></i> 5,000 <br>3 x <i class="fa fa-inr"></i> 5000 = <i class="fa fa-inr"></i> 15000
-                                  </tr>
-                                </tbody>
-                              </table>
+                            <form role="form">
+                                <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Anna Karenina">
+                                            <br>
+                                        <label for="gender">Gender</label>
+                                        <input type="text" class="form-control" id="gender">
+                                            <br>
+                                            <label for="email">Email Address</label>
+                                            <input type="email" class="form-control" id="email" placeholder="anna@bain.com" disabled>
+                                            <br>
+                                
+                                    <label for="Designation">Designation</label>
+                                    <input type="text" class="form-control" id="Designation" placeholder="Junior Manager" >
+                                    <br>
+                                    <label for="HotelCat">Hotel Category</label>
+                                    <input type="text" class="form-control" id="HotelCat" placeholder="3 Star" disabled>
+                                    <br>
+                                    <label for="FlightCat">Flight Category</label>
+                                    <input type="text" class="form-control" id="FlightCat" placeholder="Economy" disabled >
+                                </div>
+                            </div>
                         </div>
+                    <div class="text-center"?
+                    <a href="./budgetToBeat.html"><button type="button" class="btn btn-primary btn-lg">Request Profile Update</button></a>
+                    <a href="./budgetToBeat.html"><button type="button" class="btn btn-success btn-lg" >Change Password</button></a>
                     </div>
-                    <hr style="border-top: dashed 1px;color:#333;">
-                    <div class="panel panel-primary" style="border-color:#A43B40">
-                        <div class="panel-heading" style="background-color: #A43B40;border-color:#A43B40">
-                            <font size="4">Past Trips</font>
-                        </div>
-                        <div class="panel-body">
-                            <p><font size="3">Confcosn'16</font></p>
-                            <!-- <h3>Budget to beat: <span style="float: right;">1,05,000</span></h3> -->
-                            <p><font size="3">Budget to beat: &nbsp <i class="fa fa-inr"></i> 1,05,000</font></p>
-                            <!-- <h3>Budget to beat: 1,05,000</h3> -->
-                            <table class="table table-bordered">
-                                <tbody>
-                                  <tr>
-                                    <td align="center"><font size="3">Del&nbsp<i class="fa fa-exchange fa-1g"></i>&nbspLax<br>04.05.16 - 09.05.16</font></td>
-                                    <td align="center"><font size="3">Milton Station, 3 Day<br><i class="fa fa-inr"></i> 9,000x3 = <i class="fa fa-inr"></i> 27,000</font></td>
-                                    <td align="center"><font size="3">3 Day; <i class="fa fa-inr"></i> 5,000 <br>3 x <i class="fa fa-inr"></i> 5000 = <i class="fa fa-inr"></i> 15000
-                                  </tr>
-                                </tbody>
-                              </table>
-                            <hr style="border-top: solid 1px; border-color:#333;">
-                            <p><font size="3">Confcosn'16</font></p>
-                            <!-- <h3>Budget to beat: <span style="float: right;">1,05,000</span></h3> -->
-                            <p><font size="3">Budget to beat: &nbsp <i class="fa fa-inr"></i> 1,05,000</font></p>
-                            <!-- <h3>Budget to beat: 1,05,000</h3> -->
-                            <table class="table table-bordered">
-                                <tbody>
-                                  <tr>
-                                    <td align="center"><font size="3">Del&nbsp<i class="fa fa-exchange fa-1g"></i>&nbspLax<br>04.05.16 - 09.05.16</font></td>
-                                    <td align="center"><font size="3">Milton Station, 3 Day<br><i class="fa fa-inr"></i> 9,000x3 = <i class="fa fa-inr"></i> 27,000</font></td>
-                                    <td align="center"><font size="4">3 Day; <i class="fa fa-inr"></i> 5,000 <br>3 x <i class="fa fa-inr"></i> 5000 = <i class="fa fa-inr"></i> 15000
-                                  </tr>
-                                </tbody>
-                              </table>
-                        </div>
+
                     </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                
                 <!-- /.row -->
             </div>
             <!-- /.container-fluid -->
@@ -187,7 +177,6 @@
     </div>
     <!-- /#wrapper -->
 
-    <!-- jQuery -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -196,9 +185,23 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
+    <!-- DataTables JavaScript -->
+    <script src="../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
-
+     <script>
+    $(document).ready( function () {
+        $('#dataTables-example').DataTable();
+    } );
+    $(document).ready( function () {
+        $('#dataTables-example2').DataTable();
+    } );
+    $(document).ready( function () {
+        $('#dataTables-example3').DataTable();
+    } );
+    </script>
 </body>
 
 </html>

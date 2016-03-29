@@ -69,90 +69,62 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-<nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:#A43B40;margin-bottom: 0; padding:0px 0px 0px 0px;z-index: 1; position:relative !important">
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:#A43B40;margin-bottom: 0; padding:0px 0px 0px 0px;z-index: 1; border-radius: 0;position:relative !important">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                 </button>
-                <a href="./myTrips.html"><img src="./Savo_logo.png"></a>
+                <a href="./myTrips.html"><img src="Savo_logo.png"></a>
             </div>       
             <!-- /.navbar-header -->
 
-            <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        &nbsp&nbsp Anna &nbsp&nbsp<i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 10px">
+            <li><a href="#" style="pointer-events: none;"><font color="white">Anna</font></a></li>
+            <li><a href="./logIn.html"><span class="glyphicon glyphicon-log-in" style="color:white"></span> <font color="white">Log out</font></a></li>
             </ul>
             <!-- /.navbar-top-links -->
 
-            <div class="navbar-default sidebar" role="navigation">
+            <div class="navbar-default sidebar" role="navigation" style="background-color: white">
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li>
-                            <br>
-                            <br>
-                            <div class="text-center"><font size="7">40</font></div>
-                            <div class="text-center"><font size="3px">points</font></div>
-                            <br>
-                            <br>
+                    <div style="vertical-align: top;">
+                    <div class="panel panel-default">
+                        <ul class="nav"  id="side-menu">
+                            <li>
+                                <br>
+                                <br>
+                                <div class="text-center"><font size="7" color="#A43B40">5000</font></div>
+                                <div class="text-center"><font size="4" color="#A43B40">points</font></div>
+                                <br>
+                                <br>
                             <!-- <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a> -->
-                        </li>
-                        <li>
-                            <a href="myTrips.html"><div class="text-center">My Trips</div></a>
-                        </li>
-                        <li>
-                            <a href="index.html"><div class="text-center">Rewards</div></a>
-                        </li>
-                        <li>
-                            <a href="index.html"><div class="text-center">Settings</div></a>
-                        </li>
-                        <li>
-                            <a href="index.html"><div class="text-center">Help</div></a>
-                        </li>
-                        <br>
-
-                        <li>
-                            <div class="text-center"><font size="5">Leaderboard</font></div>
-                            <table style="width: 80%;" class="limit-table-col-30 table  table-striped  table-condensed center-table">
-                                    <thead>
-                                      <tr>
-                                        <th  class="text-center">Name</th>
-                                        <th class="text-center">Points</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Anna</td>
-                                        <td>40000</td>
-                                      </tr>
-                                      <tr>
-                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Debbie</td>
-                                        <td>30000</td>
-                                      </tr>
-                                      <tr>
-                                        <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> John</td>
-                                        <td>21000</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                        </li>
-                    </ul>
+                            </li>
+                            <li>
+                                <a href="./myTrips.html"><div class="text-center">My Trips</div></a>
+                            </li>
+                            <li>
+                                <a href="./rewards.html"><div class="text-center">Rewards</div></a>
+                            </li>
+                            <li>
+                                <a href="./settings.html"><div class="text-center">Settings</div></a>
+                            </li>
+                            <li>
+                                <a href="./help.html"><div class="text-center">Help</div></a>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="text-center" style='border-radius: 0;' >
+                            <div class="panel panel-default" style='border-radius: 0;'>
+                                <div class="panel-heading" style='border-radius: 0;'><span class="glyphicon glyphicon-flag" ></span>    Leaderboard</div>
+                                <ul class="nav">
+                                <li><a><div class="text-center"><span class="glyphicon glyphicon-star" style="color:black"></span>      <font color="black">Anna Karenina</font><br><font color="#A43B40">5000</font></div></a></li>
+                                <li><a><div class="text-center"><span class="glyphicon glyphicon-star-empty" style="color:black"></span>    <font color="black">Dave Ebert</font><br><font color="#A43B40">4200</font></div></a></li>
+                                <li><a><div class="text-center"><span class="glyphicon glyphicon-star-empty" style="color:black"></span>    <font color="black">Chris Hayes</font><br><font color="#A43B40">3900</font></div></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
             </div>
-            
         </nav>
 
         <!-- Page Content -->
