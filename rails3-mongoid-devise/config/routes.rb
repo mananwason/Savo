@@ -3,6 +3,11 @@ Rails3MongoidDevise::Application.routes.draw do
     root :to => 'home#index'
   end
   root :to => "home#index"
+
+  get 'rewards' => "home#rewards"
+
+  post 'updateRewardPoints' => "home#updateRewardPoints"
+
   devise_for :users
   resources :users
 end
