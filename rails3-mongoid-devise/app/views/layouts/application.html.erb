@@ -11,6 +11,7 @@
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
    <div id="wrapper">
+    <%= render 'layouts/navigation' %>
     <%= render 'layouts/sidenavigation' %>
     <div id="main" role="main">
         <%= yield %>

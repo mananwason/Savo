@@ -27,7 +27,7 @@
         </li>
     </ul>-->
     <ul class="nav navbar-nav navbar-right" style="margin-right: 10px">
-      <li><a href="#"><span class="glyphicon glyphicon-user" style="color:white"></span><font color="white"> Anna</font></a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user" style="color:white"></span><font color="white"> <%= @user.name %> </font></a></li>
       <li><a href="./logIn.html"><span class="glyphicon glyphicon-log-in" style="color:white"></span> <font color="white">Log out</font></a></li>
     </ul> 
             <!-- /.navbar-top-links -->
@@ -51,7 +51,7 @@
                 <li>
                     <br>
                     <br>
-                    <div class="text-center"><font size="7"><%= current_user.points %></font></div>
+                    <div class="text-center"><font size="7"><%= @user.points %></font></div>
                     <div class="text-center"><font size="4">points</font></div>
                     <br>
                     <br>
@@ -81,18 +81,12 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr >
-                                <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Anna</td>
-                                <td>40000</td>
-                              </tr>
-                              <tr>
-                                <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> Debbie</td>
-                                <td>30000</td>
-                              </tr>
-                              <tr>
-                                <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> John</td>
-                                <td>21000</td>
-                              </tr>
+                            <% $top_users.each do |user| %>
+                                <tr >
+                                  <td><img src="../leo.jpg" class="img-circle" alt="Cinque Terre" width="30" height="30"> <%= user.name %> </td>
+                                  <td><%= user.points %></td>
+                                </tr>
+                            <% end %>
                             </tbody>
                           </table>
                 </li>

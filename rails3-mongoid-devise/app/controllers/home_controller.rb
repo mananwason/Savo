@@ -1,14 +1,16 @@
 class HomeController < ApplicationController     
 
   before_filter :authenticate_user!
+  before_filter :index
 
   def index
     @users = User.all
+    @user = User.find(current_user.id)
+    $top_users = User.desc(:points).limit(3)
   end
 
   def rewards
   	@users = User.all 
-  	@user = User.find(current_user.id);
 	render "rewards" 
   end
 
