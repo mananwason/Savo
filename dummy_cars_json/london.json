@@ -1,0 +1,60 @@
+{
+			"cityName" : "London",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 120		//in rupees
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 130
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 170
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 230
+							
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 145
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 190
+						},
+						{
+							"typeName" : "uberXL",
+							"costPerDay" : 110
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 170		//in rupees
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 280
+						}
+					]
+				}
+
+			]
+}

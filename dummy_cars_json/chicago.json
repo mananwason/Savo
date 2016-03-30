@@ -1,0 +1,60 @@
+{
+			"cityName" : "Chicago",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 90		//in rupees
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 110
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 150
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 200
+							
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 125
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 160
+						},
+						{
+							"typeName" : "uberXL",
+							"costPerDay" : 70
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 100		//in rupees
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 220
+						}
+					]
+				}
+
+			]
+}

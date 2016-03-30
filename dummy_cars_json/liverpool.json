@@ -1,0 +1,60 @@
+{
+			"cityName" : "Liverpool",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 110		//in rupees
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 120
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 170
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 220
+							
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 125
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 180
+						},
+						{
+							"typeName" : "uberXL",
+							"costPerDay" : 100
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 150		//in rupees
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 250
+						}
+					]
+				}
+
+			]
+}

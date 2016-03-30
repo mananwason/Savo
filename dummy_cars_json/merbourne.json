@@ -1,0 +1,60 @@
+		{
+			"cityName" : "Melbourne",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 140		//in rupees
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 160
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 200
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 220
+							
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 185
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 240
+						},
+						{
+							"typeName" : "uberXL",
+							"costPerDay" : 150
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 185		//in rupees
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 295
+						}
+					]
+				}
+
+			]
+}
