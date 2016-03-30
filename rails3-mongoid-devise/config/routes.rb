@@ -10,6 +10,8 @@ Rails3MongoidDevise::Application.routes.draw do
 
   post 'updateRewardPoints' => "home#updateRewardPoints"
 
+  get 'settings' => "home#settings"
+  post 'updateSettings' => "home#updateSettings"
   devise_for :users
   resources :users
 end

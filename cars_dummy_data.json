@@ -1,0 +1,498 @@
+{
+	"cities":[
+		{
+			"cityName" : "Delhi",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 15.06			//in dollars
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 19.58
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 23
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 33			
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberGO",
+							"costPerDay" : 13.06
+						},
+						{
+							"typeName" : "uberX",
+							"costPerDay" : 15.06
+						},
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 25
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 37
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 18
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 25
+						}
+					]
+				}
+
+			]
+		},
+
+		{
+			"cityName" : "Mumbai",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 17			//in dollars
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 21
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 25
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 35			
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberGO",
+							"costPerDay" : 15
+						},
+						{
+							"typeName" : "uberX",
+							"costPerDay" : 17
+						},
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 27
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 40
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 20
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 28
+						}
+					]
+				}
+
+			]
+		},
+
+		{
+			"cityName" : "New York",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 78		//in rupees
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 85
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 150
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 220
+							
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 145
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 190
+						},
+						{
+							"typeName" : "uberXL",
+							"costPerDay" : 90
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 120		//in rupees
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 260
+						}
+					]
+				}
+
+			]
+		},
+
+		{
+			"cityName" : "Chicago",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 90		//in rupees
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 110
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 150
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 200
+							
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 125
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 160
+						},
+						{
+							"typeName" : "uberXL",
+							"costPerDay" : 70
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 100		//in rupees
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 220
+						}
+					]
+				}
+
+			]
+		},
+
+		{
+			"cityName" : "London",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 120		//in rupees
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 130
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 170
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 230
+							
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 145
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 190
+						},
+						{
+							"typeName" : "uberXL",
+							"costPerDay" : 110
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 170		//in rupees
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 280
+						}
+					]
+				}
+
+			]
+		},
+
+		{
+			"cityName" : "Liverpool",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 110		//in rupees
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 120
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 170
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 220
+							
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 125
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 180
+						},
+						{
+							"typeName" : "uberXL",
+							"costPerDay" : 100
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 150		//in rupees
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 250
+						}
+					]
+				}
+
+			]
+		},
+		{
+			"cityName" : "Melbourne",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 140		//in rupees
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 160
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 200
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 220
+							
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 185
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 240
+						},
+						{
+							"typeName" : "uberXL",
+							"costPerDay" : 150
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 185		//in rupees
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 295
+						}
+					]
+				}
+
+			]
+		},
+
+		{
+			"cityName" : "Canberra",
+			"taxiServicesAvailable" : [
+				{
+					"compName": "OlaCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "Micro",
+							"costPerDay" : 100		//in rupees
+						},
+						{
+							"typeName" : "Mini",
+							"costPerDay" : 120
+						},
+						{
+							"typeName" : "Sedan",
+							"costPerDay" : 180
+						},
+						{
+							"typeName" : "Prime",
+							"costPerDay" : 220
+							
+						}
+					]
+				},
+
+				{
+					"compName": "Uber",
+					"taxiTypes":[
+						{
+							"typeName" : "uberBlack",
+							"costPerDay" : 155
+						},
+						{
+							"typeName" : "uberSUV",
+							"costPerDay" : 230
+						},
+						{
+							"typeName" : "uberXL",
+							"costPerDay" : 120
+						}
+					]
+				},
+
+				{
+					"compName": "MeruCabs",
+					"taxiTypes":[
+						{
+							"typeName" : "MeruCab",
+							"costPerDay" : 145		//in rupees
+						},
+						{
+							"typeName" : "MeruFlexi",
+							"costPerDay" : 265
+						}
+					]
+				}
+
+			]
+		}
+
+
+	]
+}

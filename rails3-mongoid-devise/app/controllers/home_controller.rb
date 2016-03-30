@@ -42,4 +42,13 @@ class HomeController < ApplicationController
   	render "myTrips"
   end
 
+  def settings
+    render "settings"
+  end
+
+  def updateSettings   #controller where settings are changed
+    puts(params[:name])
+    render "settings"
+  end
+
 end
