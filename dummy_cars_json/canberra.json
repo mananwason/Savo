@@ -6,7 +6,7 @@
 					"taxiTypes":[
 						{
 							"typeName" : "Micro",
-							"costPerDay" : 100		//in rupees
+							"costPerDay" : 100
 						},
 						{
 							"typeName" : "Mini",
@@ -47,7 +47,7 @@
 					"taxiTypes":[
 						{
 							"typeName" : "MeruCab",
-							"costPerDay" : 145		//in rupees
+							"costPerDay" : 145
 						},
 						{
 							"typeName" : "MeruFlexi",
