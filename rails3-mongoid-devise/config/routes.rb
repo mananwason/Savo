@@ -17,13 +17,12 @@ Rails3MongoidDevise::Application.routes.draw do
   
   post 'updateRewardPoints' => "home#updateRewardPoints"
 
-<<<<<<< HEAD
   get 'settings' => "home#settings"
-  post 'updateSettings' => "home#updateSettings"
-=======
-  match 'fetchTripBookingDetails' => "home#fetchTripBookingDetails", via: [:get, :post]
 
->>>>>>> a lot of things that rohan did
+  post 'updateSettings' => "home#updateSettings"
+
+  match 'fetchTripBookingDetails' => "home#fetchTripBookingDetails", via: [:get, :post]
+  
   devise_for :users
   resources :users
 end

@@ -1,27 +1,16 @@
 class HomeController < ApplicationController     
 
-<<<<<<< HEAD
   before_filter :authenticate_user!
   before_filter :index
+
+  require 'httparty'
+  require 'json'
+  require 'date'
 
   def index
     @users = User.all
     @user = User.find(current_user.id)
     $top_users = User.desc(:points).limit(3)
-=======
-  require 'httparty'
-  require 'json'
-  require 'date'
-
-  $result_coming_global = ""
-  $result_going_global = ""
-  result_coming_currency_global = ""
-
-  def index 
-  	@users = User.all 
-  	@user = User.find(current_user.id)
->>>>>>> a lot of things that rohan did
-  end
 
   def rewards
   	@users = User.all 
@@ -57,17 +46,6 @@ class HomeController < ApplicationController
   	render "myTrips"
   end
 
-<<<<<<< HEAD
-  def settings
-    render "settings"
-  end
-
-  def updateSettings   #controller where settings are changed
-    puts(params[:name])
-    render "settings"
-  end
-
-=======
   def settings 
   	render 'settings'
   end
@@ -206,7 +184,6 @@ class HomeController < ApplicationController
 
 end
 
->>>>>>> a lot of things that rohan did
 end
 
 
