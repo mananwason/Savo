@@ -99,6 +99,7 @@
                                         <table cellspacing="0" cellpadding="0" class="table   table-hover text-center" id="dataTables-example">
                                             <thead>
                                                 <tr class="text-center">
+                                                     <th class="text-center"></th>
                                                     <th class="text-center">Carrier</th>
                                                     <th class="text-center">Departure</th>
                                                     <th class="text-center">Arrival</th>
@@ -108,19 +109,19 @@
                                             </thead>
                                             <tbody>
 
-                          
-
                                            <%= form_tag("/storeTripDetails", method: :post) do %>
 
                                                 <% i=0 %>
                                                 <% @result_going["tripOptions"].each do |result| %>
                                                     <tr>
+                                                        <td><span class="label label-primary">
+                                                            <%= radio_button_tag(:flightGoing, i) %>
+                                                            </span></td>
                                                         <td><%= result["carrier"] %></td>
                                                         <td><%= result["depTime"]%> - <%= @origin %></td>
                                                         <td><%= result["arrTime"] %> - <%= @destination %></td>
                                                         <td><%= result["duration"] %> H - Stops <%= result["numberOfStops"] %></td>
-                                                        <td><%= result["cost"]%> &nbsp&nbsp&nbsp<span class="label label-primary">
-                                                        <%= radio_button_tag(:flightGoing, i) %> </span> </td>
+                                                        <td><%= result["cost"]%> </td>
                                                     </tr>
                                                     <% i = i + 1 %>
                                                 <% end %>
@@ -133,6 +134,7 @@
                                         <table class="table table-hover text-center" id="dataTables-example2">
                                             <thead>
                                                 <tr class="text-center">
+                                                    <th class="text-center"></th>
                                                     <th class="text-center">Carrier</th>
                                                     <th class="text-center">Departure</th>
                                                     <th class="text-center">Arrival</th>
@@ -144,13 +146,14 @@
                                                 <% i=0 %>
                                                 <% @result_coming["tripOptions"].each do |result| %>
                                                     <tr>
+                                                        <td><span class="label label-primary">
+                                                            <%= radio_button_tag(:flightComing, i) %>
+                                                            </span></td>
                                                         <td><%= result["carrier"] %></td>
                                                         <td><%= result["depTime"]%> - <%= @destination %></td>
                                                         <td><%= result["arrTime"] %> - <%= @origin %></td>
                                                         <td><%= result["duration"] %> H - Stops <%= result["numberOfStops"] %></td>
-                                                        <td><%= result["cost"]%> &nbsp&nbsp&nbsp <span class="label label-primary">
-                                                        <%= radio_button_tag(:flightComing, i) %>
-                                                        </span></td>
+                                                        <td><%= result["cost"]%></td>
                                                     </tr>
                                                     <% i = i + 1 %>
                                                 <% end %>
@@ -162,23 +165,29 @@
                                         <table class="table table-hover text-center" id="dataTables-example3">
                                             <thead>
                                                 <tr class="text-center">
+                                                    <th class="text-center"></th>
                                                     <th class="text-center">Hotel</th>
-                                                    <th class="text-center">Price</th>
+                                                    <th class="text-center">Price (total) </th>
+                                                    <th class="text-center">Rating</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td><font size="3px">Excelsior</font><br>Earn 32 points</td>
-                                                    <td><font size="3px">4 x <i class="fa fa-inr"></i>5000 = <i class="fa fa-inr"></i>20000</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><font size="3px">Hotel Taj Mahal</font><br>Earn 20 points</td>
-                                                    <td><font size="3px">4 x <i class="fa fa-inr"></i>4500 = <i class="fa fa-inr"></i>18000</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><font size="3px">Navotal</font><br>Earn 40 points</td>
-                                                    <td><font size="3px">4 x <i class="fa fa-inr"></i>5000 = <i class="fa fa-inr"></i>20000</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
+                                                <% i=0 %>
+                                                <% if @hotel_response["hotels"].empty? %>
+                                                    <h1>Please modify search</h1>
+                                                <% else %>
+                                                    <% @hotel_response["hotels"].each do |response| %>
+                                                    <tr>
+                                                        <td><span class="label label-primary">
+                                                            <%= radio_button_tag(:hotel, i) %>
+                                                            </span></td>
+                                                        <td><font size="3px"><%= response["name"] %></font></td>
+                                                        <td><i class="fa fa-inr"></i><%= response["price"] * 60 %></font></td>
+                                                        <td><font size="3px"><% 1.upto(response["rating"].to_i) do |i|%><span class="glyphicon glyphicon-star" style="color: #E4BB24;"></span><% end %></font></td>
+                                                    </tr>
+                                                    <% i = i + 1 %>
+                                                    <% end %>
+                                                <% end %>
                                             </tbody>
                                         </table>
                                     </div>
@@ -187,28 +196,33 @@
                                         <table class="table table-hover text-center" id="dataTables-example4">
                                             <thead>
                                                 <tr class="text-center">
+                                                     <th class="text-center"></th>
                                                     <th class="text-center">Type</th>
-                                                    <th class="text-center">Price</th>
+                                                    <th class="text-center">Price (per day)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                             <% i=0 %>
+                                            <% @car_details[:taxiServicesAvailable].each do |car|%>
+                                                <% j=0 %>
+                                                <% car[:taxiTypes].each do |c| %>
+
                                                 <tr>
-                                                    <td><font size="3px">Uber Prime</font></td>
-                                                    <td><font size="3px">4 x <i class="fa fa-inr"></i>200 = <i class="fa fa-inr"></i>800</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
+                                                    <td><span class="label label-primary">
+                                                            <%= radio_button_tag(:car, i.to_s + " " +j.to_s) %>
+                                                            </span></td>
+                                                    <td><font size="3px"> <%= car[:compName] + " " + c[:typeName] %></font></td>
+                                                    <td><font size="3px"><i class="fa fa-inr"></i><%= c[:costPerDay].to_i * 68 %></font></td>
                                                 </tr>
-                                                <tr>
-                                                    <td><font size="3px">Ola Share</font></td>
-                                                    <td><font size="3px">4 x <i class="fa fa-inr"></i>160 = <i class="fa fa-inr"></i>640</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><font size="3px">Ola Mini</font></td>
-                                                    <td><font size="3px">4 x <i class="fa fa-inr"></i>160 = <i class="fa fa-inr"></i>640</font><button type="button" class="btn btn-outline btn-primary" style="float: right;">Book</button></td>
-                                                </tr>
+                                                <% j = j + 1 %>
+                                                <% end %>
+                                                <% i = i + 1 %>
+                                                <% end %>
                                             </tbody>
                                         </table>
                                     </div>
 
-                                     <%= submit_tag 'Confirm Trip Details', :class => 'btn btn-primary btn-lg', :style => 'width: 280px; margin-right: 10px; float: right;' %>  
+                                     <%= submit_tag 'Confirm Trip Details', :class => 'btn btn-primary btn-lg btn-outline', :style => 'width: 280px; margin-right: 10px; float: right;' %>  
 
                                     <%end%>
                                 </div>
@@ -216,13 +230,11 @@
                         </div>
                         <!-- /.panel-body -->
                     </div>
-                
                 <!-- /.row -->
             </div>
             <!-- /.container-fluid -->
         </div>
         <!-- /#page-wrapper -->
-
     </div>
     <!-- /#wrapper -->
 

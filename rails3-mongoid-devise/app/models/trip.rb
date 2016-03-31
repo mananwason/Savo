@@ -21,7 +21,7 @@ class Trip
 
   ## Travel
   field :hotel_name, :type => String, :default => ""
-  field :hotel_category,              :type => String, :default => "4_star"
+  field :hotel_category,              :type => Integer, :default => 4
   field :hotel_city,              :type => String, :default => ""
   field :check_in,              :type => DateTime, :default => DateTime.now
   field :check_out,              :type => DateTime, :default => DateTime.now
