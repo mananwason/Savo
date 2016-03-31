@@ -6,6 +6,7 @@ class HomeController < ApplicationController
   require 'httparty'
   require 'json'
   require 'date'
+  require 'array_stats'
 
   $car_data = {
       cityName: "Delhi",
@@ -159,7 +160,7 @@ class HomeController < ApplicationController
 			      childCount: '0',
 			      seniorCount: '0'
 			    },
-			    solutions: '10',
+			    solutions: '12',
 			    maxPrice: 'USD200000.00',
 			    refundable: false
 			  }
@@ -184,7 +185,7 @@ class HomeController < ApplicationController
 			      childCount: '0',
 			      seniorCount: '0'
 			    },
-			    solutions: '10',
+			    solutions: '12',
 			    maxPrice: 'USD200000.00',
 			    refundable: false
 			  }
@@ -200,24 +201,47 @@ class HomeController < ApplicationController
     @car_details = $car_data
 
     # patented algo for budget to beat 
-    total = 0
+    total_going = []
     count = 0
     @result_going["tripOptions"].each do |result|
       begin 
-        total += result["cost"].match(/[0-9]+/)[0].to_i
+        total_going.append(result["cost"].match(/[0-9]+/)[0].to_i)
         count += 1
       rescue Exception
         next 
       end
     end
 
-    @budgetToBeat = total.to_f/count.to_f
+    total_coming = []
+    @result_going["tripOptions"].each do |result|
+      begin 
+        total_coming.append(result["cost"].match(/[0-9]+/)[0].to_i)
+        count += 1
+      rescue Exception
+        next 
+      end
+    end
+
+    hotel_array = []
+    @hotel_response["hotels"].each do |hotel|
+      hotel_array.append(hotel["price"].to_i * 68)
+    end
+
+    car_data_array = []
+    numberOfDays =  Date.parse(params["carDropOffDateAndTime"]) -  Date.parse(params["carPickUpDateAndTime"])
+    $car_data[:taxiServicesAvailable].each do |e|
+      e[:taxiTypes].each do |t|
+        car_data_array.append(t[:costPerDay].to_i * 68 * numberOfDays)
+      end
+    end
+
+    @budgetToBeat = total_going.percentile(20) + total_coming.percentile(20) + hotel_array.percentile(20) + car_data_array.percentile(20)
 
     ## for next step
     $result_going_global = @result_coming
     $result_coming_global = @result_going
     $trip_name = params['tripName']
-    $btb = @budgetToBeat
+    $btb = @budgetToBeat.to_i
     $origin_city = params["flightFrom"].split("(")[1].split(")")[0]
     $destination_city = params["flightTo"].split("(")[1].split(")")[0]
     $hotel_data = @hotel_response
@@ -246,7 +270,6 @@ class HomeController < ApplicationController
   def storeTripDetails
     @user = User.find(current_user.id);
     @trips = @user.trips;
-
     flightGoing = $result_going_global["tripOptions"][params[:flightGoing].to_i]
     flightComing = $result_coming_global["tripOptions"][params[:flightComing].to_i]
     hotel = $hotel_data["hotels"][params[:hotel].to_i]
@@ -266,7 +289,7 @@ class HomeController < ApplicationController
       city_to: $destination_city, 
       leave_date: DateTime.parse(flightGoing["depTime"]), 
       return_date: DateTime.parse(flightComing["depTime"]), 
-      travel_cost: 123, 
+      travel_cost: flightGoing["cost"].match(/[0-9]+/)[0].to_i + flightComing["cost"].match(/[0-9]+/)[0].to_i, 
       hotel_name: hotel["name"], 
       hotel_city: $hotel_where, 
       check_in: $hotel_checkin, 

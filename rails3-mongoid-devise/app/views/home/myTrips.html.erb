@@ -82,7 +82,7 @@
                                     <table class="table table-bordered">
                                         <tbody>
                                           <tr>
-                                            <td align="center"><font size="3"><%= trip.city_from %>&nbsp<i class="fa fa-exchange fa-1g"></i>&nbsp <%= trip.city_to %><br><%= trip.leave_date %> - <%= trip.return_date %></font></td>
+                                            <td align="center"><font size="3"><%= trip.city_from %>&nbsp<i class="fa fa-exchange fa-1g"></i>&nbsp <%= trip.city_to %><br><%= trip.leave_date %> - <%= trip.return_date %></font><br /><i class="fa fa-inr"></i> <%= trip.travel_cost %></td>
                                             <td align="center"><font size="3"><%= trip.hotel_name %>, <%= distance_of_time_in_words(trip.check_in, trip.check_out)%><br><i class="fa fa-inr"></i> <%= trip.hotel_cost * 68 %></font><br/>
                                             <font size="3px"><% 1.upto(trip.hotel_category) do |i|%><span class="glyphicon glyphicon-star" style="color: #E4BB24;"></span><% end %></font>
                                             </td>
