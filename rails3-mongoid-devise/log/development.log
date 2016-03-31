@@ -1,0 +1,275 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 15:48:53 +0530
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6149ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3159ms)
+Processing by HomeController#myTrips as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4957ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2711ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5150ms)
+  Rendered home/myTrips.html.erb within layouts/application (15.9ms)
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/7185206006796ad66991406ed03817c2f84bc8f0/application.css.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/0523b61dfc8c7e998c340a7beb49e8a780b0322e/_bootstrap-sprockets.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/0523b61dfc8c7e998c340a7beb49e8a780b0322e/_bootstrap.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_variables.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_mixins.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_hide-text.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_opacity.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_image.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_labels.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_reset-filter.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_resize.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_size.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_tab-focus.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_text-overflow.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_alerts.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_buttons.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_panels.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_pagination.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_list-group.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_nav-divider.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_forms.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_progress-bar.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_table-row.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_background-variant.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_border-radius.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_gradients.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_clearfix.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_center-block.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_grid-framework.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_grid.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_normalize.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_print.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_glyphicons.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_scaffolding.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_type.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_code.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_grid.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_tables.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_forms.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_buttons.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_component-animations.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_dropdowns.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_button-groups.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_input-groups.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_navs.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_navbar.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_pagination.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_pager.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_labels.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_badges.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_jumbotron.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_thumbnails.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_alerts.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_progress-bars.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_media.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_list-group.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_panels.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_wells.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_close.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_modals.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_tooltip.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_popovers.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_carousel.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_utilities.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Compiled bootstrap-datetimepicker.css  (0ms)  (pid 29954)
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/6145e2f0b04a16901cd32b596c1427d33edf0c17/bootstrap-datetimepicker.cssc: can't dump anonymous class #<Class:0x007fc193a32a58>
+
+Compiled application.css  (2997ms)  (pid 29954)
+Compiled jquery.js  (5ms)  (pid 29954)
+Compiled jquery_ujs.js  (0ms)  (pid 29954)
+Compiled moment.js  (1ms)  (pid 29954)
+Compiled bootstrap-datetimepicker.js  (2ms)  (pid 29954)
+Compiled application.js  (227ms)  (pid 29954)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.5748ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[280441747481] (0.0660ms)
+  Rendered layouts/_sidenavigation.html.erb (2.0ms)
+Completed 200 OK in 3430ms (Views: 3378.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 15:48:59 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TirfACikq4syjLbq0y61ECBpsnlHXforvvyXd5xWrbg="}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4921ms)
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 5ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 15:48:59 +0530
+Processing by HomeController#myTrips as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 15:48:59 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 9.1ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 15:48:59 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 15:49:12 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0a3XbturEGDvtkz0EjE56hFtLuAlgW58J7on7levxz4=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6738ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4101ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 06:20:26 UTC, "current_sign_in_at"=>2016-03-31 10:19:12 UTC, "sign_in_count"=>18, "updated_at"=>2016-03-31 10:19:12 UTC}} flags=[] (0.2289ms)
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 81ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 15:49:12 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3679ms)
+Processing by HomeController#myTrips as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2761ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2439ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3521ms)
+  Rendered home/myTrips.html.erb within layouts/application (1.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.6173ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[280227539288] (0.0651ms)
+  Rendered layouts/_sidenavigation.html.erb (1.4ms)
+Completed 200 OK in 11ms (Views: 8.5ms)
+
+
+Started GET "/newTrip" for 127.0.0.1 at 2016-03-31 15:49:26 +0530
+Processing by HomeController#newTrip as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9978ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.6642ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3998ms)
+  Rendered home/newTrip.html.erb within layouts/application (191.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.8078ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[280774906572] (0.1128ms)
+  Rendered layouts/_sidenavigation.html.erb (3.1ms)
+Completed 200 OK in 214ms (Views: 208.3ms)
+
+
+Started GET "/rewards.html" for 127.0.0.1 at 2016-03-31 15:53:10 +0530
+Processing by HomeController#rewards as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7401ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3448ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2880ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2890ms)
+  Rendered home/rewards.html.erb within layouts/application (1.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.6309ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[279855556515] (0.0660ms)
+  Rendered layouts/_sidenavigation.html.erb (1.5ms)
+Completed 200 OK in 14ms (Views: 9.8ms)
+
+
+Started GET "/myTrips.html" for 127.0.0.1 at 2016-03-31 15:53:13 +0530
+Processing by HomeController#myTrips as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6959ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3221ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2780ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2351ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4001ms)
+  Rendered home/myTrips.html.erb within layouts/application (1.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.5379ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[280927220508] (0.0639ms)
+  Rendered layouts/_sidenavigation.html.erb (1.3ms)
+Completed 200 OK in 14ms (Views: 8.4ms)
