@@ -33,7 +33,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Savo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -61,22 +61,20 @@
 <body style="overflow-x: hidden;">
 
 
-    <div id="wrapper" style="font-family: "Lato", sans-serif;">
-        <!-- Page Content -->
-        <div id="page-wrapper" style='border-radius: 0;'>
+    <div id="page-wrapper" style='border-radius: 0; font-family: "Lato",sans-serif;'>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div>
                         <h1 class="page-header">New Trip</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
                                               
                 <%= form_tag("/fetchTripBookingDetails", method: :post) do %>
-
-                    <div style='display: inline-block;'>
-                        <label>Enter trip name</label>
-                        <%= text_field_tag 'tripName',nil ,:class => "form-control form-inline", :placeholder => 'First Trip' %>
+                
+                    <div class="form-group form-inline" style='display: inline-block;'>
+                        <label>Enter Trip Name  </label>
+                        <%= text_field_tag 'tripName',nil ,:class => "form-control form-inline", :placeholder => '', :style => 'margin-left: 10px;' %>
                     </div>
         
                 <br>
@@ -271,7 +269,7 @@
                         </div>
                         <!-- /.panel-body -->
                     </div>
-                    <%= submit_tag 'Generate Budget To Beat', :class => 'btn btn-primary btn-lg', :style => 'width: 280px; margin-right: 10px; float: right;' %>
+                    <%= submit_tag 'Generate Budget To Beat', :class => 'btn btn-primary btn-lg btn-outline', :style => 'width: 230px; height:40px;margin-right: 10px; float: right; padding: 0 5px 5px 5px; font-size: 15px;' %>
                 <!-- /.row -->
             </div>
             <!-- /.container-fluid -->
