@@ -18,25 +18,22 @@
     <!-- /.navbar-header -->
 
     <ul class="nav navbar-nav navbar-right">
-    <li><a href="#" style="pointer-events: none; margin-left: 70px;font-family: 'Lato', sans-serif;"><font color="white"><b><%= @user.name %></b></font></a></li>
-    <li style="font-family: 'Lato', sans-serif;"><a href="./logIn.html"><span class="glyphicon glyphicon-log-out" style="color:white;"></span> <font color="white"><b>Log out</b></font></a></li>
-
-    <a href="/users/sign_out" data-method="delete" rel="nofollow">Logout</a>
+    <li><a href="#" style="pointer-events: none; margin-left: 70px;font-family: 'Lato', sans-serif;"><font color="white"><b>Hi, <%= @user.name %>!</b></font></a></li>
+    <li style="font-family: 'Lato', sans-serif;"><a href="/users/sign_out" data-method="delete" rel="nofollow"><span class="glyphicon glyphicon-log-out" style="color:white;"></span> <font color="white"><b>Log out</b></font></a></li>
 
     </ul>
     <!-- /.navbar-top-links -->
 
     <div class="navbar-default sidebar" role="navigation" style="background-color: white;">
         <div class="sidebar-nav navbar-collapse">
-            <div style="vertical-align: top; margin-left: 30px; margin-top: 30px;font-family: 'Lato', sans-serif;">
+            <div style="vertical-align: top; margin-left: 22px; margin-top: 22px;font-family: 'Lato', sans-serif;">
             <div class="panel panel-default">
                 <ul class="nav"  id="side-menu">
                     <li>
                         <br>
                         <br>
-                        <div class="text-center"><font size="7" color="#A43B40"><%= @user.points %></font></div>
-                        <div class="text-center"><font size="4" color="#A43B40">POINTS</font></div>
-                        <br>
+                        <div class="text-center"><font size="6" color="#A43B40"><%= @user.points %></font></div>
+                        <div class="text-center"><font size="3" color="#A43B40">POINTS</font></div>
                         <br>
                     <!-- <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a> -->
                     </li>

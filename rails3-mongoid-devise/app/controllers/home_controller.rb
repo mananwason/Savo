@@ -27,23 +27,23 @@ class HomeController < ApplicationController
   end
 
   def updateRewardPoints
-  	user = User.find(current_user.id);
-
-	totalPointsRedeemed = convertToNumber(params[:cash]) + convertToNumber(params[:nike]) + convertToNumber(params[:croma]) + convertToNumber(params[:adidas]) + convertToNumber(params[:ebay]) + convertToNumber(params[:sodexo]) + convertToNumber(params[:snapdeal]) + convertToNumber(params[:jabong]); 
-	currentPoints = user.points
-	pointsLeft = convertToNumber(totalPointsRedeemed) - convertToNumber(currentPoints)
+  user = User.find(current_user.id);
+	totalPointsRedeemed = convertToNumber(params[:cash]) + convertToNumber(params[:nike])*1000 + convertToNumber(params[:croma])*1000 + convertToNumber(params[:adidas])*1000 + convertToNumber(params[:ebay])*1000 + convertToNumber(params[:sodexo])*1000 + convertToNumber(params[:snapdeal])*1000 + convertToNumber(params[:jabong])*1000
+  currentPoints = user.points
+	pointsLeft = convertToNumber(currentPoints) - convertToNumber(totalPointsRedeemed) 
 	if (pointsLeft) < 0 
-		user.update(points: 0)
+		user.points = 0
 	else 
-		user.update(points: pointsLeft)
+		user.points = pointsLeft
 	end
-	render "rewards"     
+  user.save
+	rewards     
   end
 
   def myTrips
-  	@user = User.find(current_user.id);
-  	@todayDate = Date.parse(Time.now.to_s);
-  	@trips = @user.trips;
+  	@user = User.find(current_user.id)
+  	@todayDate = Date.parse(Time.now.to_s)
+  	@trips = @user.trips
   	render "myTrips"
   end
 

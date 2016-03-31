@@ -32,7 +32,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Savo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -51,6 +51,7 @@
 
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -66,71 +67,13 @@
 
 
     <div id="wrapper">
-        <!-- Navigation -->
-                <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:#A43B40;margin-bottom: 0; padding:0px 0px 0px 0px;z-index: 1; border-radius: 0;position:relative !important">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                </button>
-                <a href="./myTrips.html"><img src="./Savo_logo.png"></a>
-            </div>       
-            <!-- /.navbar-header -->
-
-            <ul class="nav navbar-nav navbar-right" style="margin-right: 10px">
-            <li><a href="#" style="pointer-events: none;"><font color="white">Anna</font></a></li>
-            <li><a href="./logIn.html"><span class="glyphicon glyphicon-log-in" style="color:white"></span> <font color="white">Log out</font></a></li>
-            </ul>
-            <!-- /.navbar-top-links -->
-
-            <div class="navbar-default sidebar" role="navigation" style="background-color: white">
-                <!--<div class="sidebar-nav navbar-collapse">-->
-                    <div class="panel panel-default">
-                        <ul class="nav"  id="side-menu">
-                            <li>
-                                <br>
-                                <br>
-                                <div class="text-center"><font size="7" color="#A43B40">40</font></div>
-                                <div class="text-center"><font size="4" color="#A43B40">points</font></div>
-                                <br>
-                                <br>
-                            <!-- <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a> -->
-                            </li>
-                            <li>
-                                <a href="./myTrips.html"><div class="text-center">My Trips</div></a>
-                            </li>
-                            <li>
-                                <a href="./rewards.html"><div class="text-center">Rewards</div></a>
-                            </li>
-                            <li>
-                                <a href="./settings.html"><div class="text-center">Settings</div></a>
-                            </li>
-                            <li>
-                                <a href="./help.html"><div class="text-center">Help</div></a>
-                            </li>
-
-                        </ul>
-                    </div>
-                        <div class="text-center" style='border-radius: 0;' >
-                            <div class="panel panel-default">
-                                <div class="panel-heading" style='border-radius: 0;'><span class="glyphicon glyphicon-flag" ></span>    Leaderboard</div>
-                                <ul class="nav">
-                                <li><a><div class="text-center"><span class="glyphicon glyphicon-star" style="color:black"></span>      <font color="black">Anna Karenina</font><br><font color="#A43B40">5000</font></div></a></li>
-                                <li><a><div class="text-center"><span class="glyphicon glyphicon-star-empty" style="color:black"></span>    <font color="black">Dave Ebert</font><br><font color="#A43B40">4200</font></div></a></li>
-                                <li><a><div class="text-center"><span class="glyphicon glyphicon-star-empty" style="color:black"></span>    <font color="black">Chris Hayes</font><br><font color="#A43B40">3900</font></div></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                <!--</div>-->
-            </div>
-        </nav>
 
         <!-- Page Content -->
-        <div id="page-wrapper" style='border-radius: 0;'>
+        <div id="page-wrapper" style='border-radius: 0; font-family: "Lato",sans-serif;'>
             <div class="container-fluid">
                 <div class="row">
                     <div>
-                        <h1 class="page-header">Personal Account Details<a href="./newtrip2.html" role="button" class="btn btn-success btn-lg" style="float: right;"><i class="fa fa-plus-square"></i> New Trip</a></h1>
+                        <h1 class="page-header">Personal Account Details<a href="./newtrip2.html" role="button" class="btn btn-success btn-lg" style="float: right; font-size: 15px;"><i class="fa fa-plus-square"></i> New Trip</a></h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -143,35 +86,35 @@
                                 <div class="form-group">
                                         <label for="name">Name</label>
                                         <!-- <input type="text" class="form-control" id="name" placeholder="Anna Karenina"> -->
-                                       <%= text_field_tag 'name',nil ,:placeholder => "Anna Karenina", class: 'form-control'%>
+                                       <%= text_field_tag 'name',nil ,:value => @user.name, class: 'form-control'%>
                                             <br>
                                         <label for="gender">Gender</label>
                                         <!-- <input type="text" class="form-control" id="gender"> -->
-                                        <%= text_field_tag 'gender',nil ,:placeholder => "Female", class: 'form-control'%>
+                                        <%= text_field_tag 'gender',nil ,:value => @user.gender, class: 'form-control'%>
                                             <br>
-                                        <label for="email">Email Address</label>
+                                        <label for="email">E-mail</label>
                                         <!-- <input type="email" class="form-control" id="email" placeholder="anna@bain.com" disabled> -->
-                                        <%= email_field 'email',nil ,:placeholder => "anna@bain.com", class: 'form-control'%>
+                                        <%= email_field 'email',nil ,:placeholder => @user.email, class: 'form-control'%>
                                             <br>
                                 
                                     <label for="Designation">Designation</label>
-                                    <%= text_field_tag 'designation',nil ,:placeholder => "Junior Manager" , class: 'form-control'%>
+                                    <%= text_field_tag 'designation',nil ,:value => @user.level , class: 'form-control'%>
                                     <br>
                                     <label for="HotelCat">Hotel Category</label>
                                     <!-- <input type="text" class="form-control" id="HotelCat" placeholder="3 Star" disabled> -->
-                                    <%= text_field_tag 'HotelCat',nil ,:placeholder => "3 Star", class: 'form-control'%>
+                                    <%= text_field_tag 'HotelCat',nil ,:placeholder => @user.max_hotel, class: 'form-control'%>
                                     <br>
                                     <label for="FlightCat">Flight Category</label>
                                     <!-- <input type="text" class="form-control" id="FlightCat" placeholder="Economy" disabled > -->
-                                     <%= text_field_tag 'FlightCat',nil ,:placeholder => "Economy", class: 'form-control' %>
+                                     <%= text_field_tag 'FlightCat',nil ,:placeholder => @user.max_flight, class: 'form-control' %>
                                 </div>
                             </div>
                     </div>
-                        <div class="text-center">
-                        <%= submit_tag 'Request Profile Update', :class => 'btn btn-primary btn-lg'%>
+                        <div class="text-center" style="margin-bottom: 40px;">
+                        <%= submit_tag 'Request Profile Update', :class => 'btn btn-primary btn-lg', :style => 'width: 230px; height: 40px;margin-right: 10px; padding: 0 5px 5px 5px; font-size: 15px;' %>
                         <!--<a href="./budgetToBeat.html"><button type="button" class="btn btn-primary btn-lg">Request Profile Update</button></a>-->
                         <!-- <a href="./budgetToBeat.html"><button type="button" class="btn btn-success btn-lg" >Change Password</button></a> -->
-                        <%= submit_tag 'Change Password', :class => 'btn btn-primary btn-lg' %>
+                        <%= submit_tag 'Change Password', :class => 'btn btn-primary btn-lg', :style => 'width: 180px; height: 40px; margin-right: 10px; float: right; padding: 0 5px 5px 5px; font-size: 15px;' %>
                         </div>
 
                 </div>

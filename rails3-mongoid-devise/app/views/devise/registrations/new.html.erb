@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     </head>
-    <body bgcolor="black" style="background-color: #ECECEC">
+    <body style="overflow-x: hidden; background-color: #ECECEC; font-family: "Lato", sans-serif;">
 
     	<!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:#A43B40;margin-bottom: 0; ">
@@ -39,10 +39,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="myTrips.html"><img src="../Savo_logo.png"></a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-            <li><a href="./signup.html"><span class="glyphicon glyphicon-log-in" style="color:white"></span> <font color="white">Sign In</font></a></li>
-            </ul>             
+            </div>            
         </nav>
 
 
@@ -62,7 +59,7 @@
 	                                <%= f.email_field :email, class: "form-control", placeholder: "Email",autofocus: true %>
 	                                </div>
 	                                <div class="form-group">
-                                    <%= f.text_field :level, class: "form-control", placeholder: "Designation",autofocus: true %>
+                                    <%= f.text_field :level, class: "form-control", placeholder: "Designation" ,autofocus: true %>
 	                                </div>
 	                                <div>
 	                                <div class="form-group">
@@ -81,12 +78,14 @@
 	                                    </label>
 	                                </div>
 	                                <!-- Change this to a button or input when using this as a form -->
-	                                <div><%= f.submit "Sign up", class: 'btn btn-lg btn-success btn-block', href: "./myTrips.html"%></div>
+	                                <div><%= f.submit "Sign up", class: 'btn btn-lg btn-success btn-block'%></div>
 	                            </fieldset>
                         <% end %>
+                        <div style="margin-top: 10px; font-family: 'Lato', sans-serif;">
+                            <a href="/users/sign_in"> <font size="2">Already registered? Sign In!</font></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        <%= render "devise/shared/links" %>
     </body>
 </html>
