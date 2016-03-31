@@ -11,6 +11,7 @@ class HomeController < ApplicationController
     @users = User.all
     @user = User.find(current_user.id)
     $top_users = User.desc(:points).limit(3)
+  end
 
   def rewards
   	@users = User.all 
@@ -40,7 +41,7 @@ class HomeController < ApplicationController
   end
 
   def myTrips
-  	@user = User.find('56fa208a5ab5fd6c86000001');
+  	@user = User.find(current_user.id);
   	@todayDate = Date.parse(Time.now.to_s);
   	@trips = @user.trips;
   	render "myTrips"
@@ -66,7 +67,7 @@ class HomeController < ApplicationController
   def fetchTripBookingDetails
 
     ##change this id 
-  	user = User.find('56fa208a5ab5fd6c86000001')
+  	user = User.find(current_user.id)
 
     @origin = params["flightFrom"].split("(")[1].split(")")[0]
 
@@ -163,7 +164,7 @@ class HomeController < ApplicationController
 
   def storeTripDetails
 
-    @user = User.find('56fa208a5ab5fd6c86000001');
+    @user = User.find(current_user.id);
     @trips = @user.trips;
 
     flightGoing = $result_going_global["tripOptions"][params[:flightGoing].to_i]

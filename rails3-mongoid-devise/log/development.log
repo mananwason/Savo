@@ -1,0 +1,2262 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:42:21 +0530
+
+SyntaxError - syntax error, unexpected end-of-input, expecting keyword_end:
+  app/controllers/home_controller.rb:191:in `'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.14) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.14) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  mongoid (3.1.7) lib/rack/mongoid/middleware/identity_map.rb:34:in `block in call'
+  mongoid (3.1.7) lib/mongoid/unit_of_work.rb:39:in `unit_of_work'
+  mongoid (3.1.7) lib/rack/mongoid/middleware/identity_map.rb:34:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__1170715279237628870__call__2076073114086624740__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/48de26a8a95285f4/variables" for 127.0.0.1 at 2016-03-31 10:42:22 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:42:59 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 36ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:42:59 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/7185206006796ad66991406ed03817c2f84bc8f0/application.css.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/0523b61dfc8c7e998c340a7beb49e8a780b0322e/_bootstrap-sprockets.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/0523b61dfc8c7e998c340a7beb49e8a780b0322e/_bootstrap.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_variables.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_mixins.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_hide-text.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_opacity.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_image.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_labels.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_reset-filter.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_resize.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_size.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_tab-focus.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_text-overflow.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_alerts.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_buttons.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_panels.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_pagination.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_list-group.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_nav-divider.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_forms.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_progress-bar.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_table-row.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_background-variant.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_border-radius.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_gradients.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_clearfix.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_center-block.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_grid-framework.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/cca1c8bb6756d1959a843e4bbf05835c106a5806/_grid.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_normalize.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_print.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_glyphicons.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_scaffolding.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_type.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_code.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_grid.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_tables.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_forms.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_buttons.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_component-animations.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_dropdowns.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_button-groups.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_input-groups.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_navs.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_navbar.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_pagination.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_pager.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_labels.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_badges.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_jumbotron.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_thumbnails.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_alerts.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_progress-bars.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_media.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_list-group.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_panels.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_wells.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_close.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_modals.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_tooltip.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_popovers.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_carousel.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_utilities.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/d20951da1c6f16aae466e63f3041bfcde8f65258/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Compiled bootstrap-datetimepicker.css  (0ms)  (pid 16937)
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/6145e2f0b04a16901cd32b596c1427d33edf0c17/bootstrap-datetimepicker.cssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Warning. Error encountered while saving cache /Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/tmp/cache/sass/7185206006796ad66991406ed03817c2f84bc8f0/home.css.scssc: can't dump anonymous class #<Class:0x007ff8cdcbaae8>
+
+Compiled home.css  (2ms)  (pid 16937)
+Compiled application.css  (3109ms)  (pid 16937)
+Compiled jquery.js  (3ms)  (pid 16937)
+Compiled jquery_ujs.js  (0ms)  (pid 16937)
+Compiled moment.js  (1ms)  (pid 16937)
+Compiled bootstrap-datetimepicker.js  (2ms)  (pid 16937)
+Compiled home.js  (237ms)  (pid 16937)
+Compiled application.js  (500ms)  (pid 16937)
+Completed 200 OK in 3786ms (Views: 3783.9ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:43:03 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:43:09 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p9d1F9syIM6AH0pOBTexXbio0oxeCCkImiVrnd6PhyQ=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9432ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (5.6331ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"gender"=>"", "last_sign_in_at"=>2016-03-30 02:07:56 UTC, "current_sign_in_at"=>2016-03-31 05:13:09 UTC, "sign_in_count"=>4, "updated_at"=>2016-03-31 05:13:09 UTC}} flags=[] (0.1490ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 49ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:43:09 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3901ms)
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3459ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2558ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4041ms)
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (1.8501ms)
+  Rendered layouts/_sidenavigation.html.erb (3.0ms)
+Completed 200 OK in 16ms (Views: 14.3ms)
+
+
+Started GET "/myTrips.html" for 127.0.0.1 at 2016-03-31 10:43:15 +0530
+Processing by HomeController#myTrips as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4628ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2060ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2451ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.2100ms)
+  Rendered home/myTrips.html.erb within layouts/application (7.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4239ms)
+  Rendered layouts/_sidenavigation.html.erb (0.9ms)
+Completed 200 OK in 32ms (Views: 14.7ms)
+
+
+Started GET "/newTrip" for 127.0.0.1 at 2016-03-31 10:43:22 +0530
+Processing by HomeController#newTrip as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5379ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2749ms)
+  Rendered home/newTrip.html.erb within layouts/application (118.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4652ms)
+  Rendered layouts/_sidenavigation.html.erb (1.0ms)
+Completed 200 OK in 128ms (Views: 124.8ms)
+
+
+Started POST "/fetchTripBookingDetails" for 127.0.0.1 at 2016-03-31 10:43:39 +0530
+Processing by HomeController#fetchTripBookingDetails as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8NHld/GHudpdAfStlNzWFyL//JbHYBZVP9IiXr1NYko=", "tripName"=>"Helloooooo ", "tripType"=>"One Way", "flightFrom"=>"Jodhpur (JDH)", "flightLeaveDate"=>"2016-05-14", "flightTo"=>"Delhi (DEL)", "flightReturnDate"=>"2016-06-23", "accomodationWhere"=>"", "accomodationCheckIn"=>"", "accomodationCheckOut"=>"", "carPickUp"=>"", "carPickUpDateAndTime"=>"", "carDropOffDateAndTime"=>"", "commit"=>"Generate Budget To Beat"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.7131ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3171ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3371ms)
+  Rendered home/fetchTripBookingDetails.html.erb within layouts/application (2.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4511ms)
+  Rendered layouts/_sidenavigation.html.erb (1.0ms)
+Completed 200 OK in 5459ms (Views: 8.1ms)
+
+
+Started POST "/storeTripDetails" for 127.0.0.1 at 2016-03-31 10:43:59 +0530
+Processing by HomeController#storeTripDetails as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8NHld/GHudpdAfStlNzWFyL//JbHYBZVP9IiXr1NYko=", "flightGoing"=>"4", "flightComing"=>"8", "commit"=>"Confirm Trip Details"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3681ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5171ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4950ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=savo collection=trips documents=[{"_id"=>"56fcb2175ab5fd4a03000001", "budget_to_beat"=>9571, "trip_status"=>"upcoming", "travel_type"=>"round_trip", "city_from"=>"JDH", "city_to"=>"DEL", "leave_date"=>2016-05-14 00:00:00 UTC, "return_date"=>2016-05-14 00:00:00 UTC, "travel_cost"=>123, "hotel_name"=>"", "hotel_category"=>"4_star", "hotel_city"=>"", "check_in"=>2016-03-31 05:13:15 UTC, "check_out"=>2016-03-31 05:13:15 UTC, "hotel_cost"=>0, "vehicle_name"=>"", "pick_up_location"=>"", "pick_up"=>2016-03-31 05:13:15 UTC, "drop"=>2016-03-31 05:13:15 UTC, "car_cost"=>0, "name"=>"Helloooooo ", "user_id"=>"56fa208a5ab5fd6c86000001", "updated_at"=>2016-03-31 05:13:59 UTC, "created_at"=>2016-03-31 05:13:59 UTC}] flags=[] (0.1791ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3159ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.2231ms)
+  Rendered home/myTrips.html.erb within layouts/application (7.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.5031ms)
+  Rendered layouts/_sidenavigation.html.erb (1.0ms)
+Completed 200 OK in 22ms (Views: 13.8ms)
+
+
+Started GET "/rewards.html" for 127.0.0.1 at 2016-03-31 10:44:32 +0530
+Processing by HomeController#rewards as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6740ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3128ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2499ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.1941ms)
+  Rendered home/rewards.html.erb within layouts/application (1.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4420ms)
+  Rendered layouts/_sidenavigation.html.erb (1.0ms)
+Completed 200 OK in 11ms (Views: 6.5ms)
+
+
+Started POST "/updateRewardPoints" for 127.0.0.1 at 2016-03-31 10:44:36 +0530
+Processing by HomeController#updateRewardPoints as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8NHld/GHudpdAfStlNzWFyL//JbHYBZVP9IiXr1NYko=", "cash"=>"100", "ebay"=>"", "nike"=>"", "jabong"=>"", "sodexo"=>"", "croma"=>"", "adidas"=>"", "snapdeal"=>"", "commit"=>"Redeem"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5410ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2961ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2511ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2613ms)
+  Rendered home/rewards.html.erb within layouts/application (0.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.5100ms)
+  Rendered layouts/_sidenavigation.html.erb (1.1ms)
+Completed 200 OK in 12ms (Views: 6.4ms)
+
+
+Started GET "/logIn.html" for 127.0.0.1 at 2016-03-31 10:44:52 +0530
+
+ActionController::RoutingError (No route matches [GET] "/logIn.html"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:45:02 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8NHld/GHudpdAfStlNzWFyL//JbHYBZVP9IiXr1NYko="}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5610ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:45:02 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:45:02 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 6.5ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:45:02 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started POST "/updateRewardPoints" for 127.0.0.1 at 2016-03-31 10:45:40 +0530
+Processing by HomeController#updateRewardPoints as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8NHld/GHudpdAfStlNzWFyL//JbHYBZVP9IiXr1NYko=", "cash"=>"100", "ebay"=>"", "nike"=>"", "jabong"=>"", "sodexo"=>"", "croma"=>"", "adidas"=>"", "snapdeal"=>"", "commit"=>"Redeem"}
+WARNING: Can't verify CSRF token authenticity
+Completed 401 Unauthorized in 69ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:45:41 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:45:41 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:45:45 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y55mRNte+dqWuQyIpzmGIMX47xlBgpyoL4MOAdIZj+I=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7069ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3629ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:13:09 UTC, "current_sign_in_at"=>2016-03-31 05:15:45 UTC, "sign_in_count"=>5, "updated_at"=>2016-03-31 05:15:45 UTC}} flags=[] (0.1421ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:45:45 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3519ms)
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3040ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2451ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3099ms)
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.3979ms)
+  Rendered layouts/_sidenavigation.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 7.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:45:50 +0530
+Processing by Devise::SessionsController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5679ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2968ms)
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:46:16 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3972ms)
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6790ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3438ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3262ms)
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.3371ms)
+  Rendered layouts/_sidenavigation.html.erb (0.7ms)
+Completed 200 OK in 9ms (Views: 6.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:46:22 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8NHld/GHudpdAfStlNzWFyL//JbHYBZVP9IiXr1NYko="}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8287ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5629ms)
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:46:22 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:46:22 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:46:22 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:46:26 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sJbIrUko1Typ/ALWfvSMMWcVnB6BsYJLeMjedoUhRdU=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5128ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:15:45 UTC, "current_sign_in_at"=>2016-03-31 05:16:27 UTC, "sign_in_count"=>6, "updated_at"=>2016-03-31 05:16:27 UTC}} flags=[] (0.1128ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:46:27 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3350ms)
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2642ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2511ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2711ms)
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.3891ms)
+  Rendered layouts/_sidenavigation.html.erb (0.8ms)
+Completed 200 OK in 7ms (Views: 5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:46:58 +0530
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5801ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3779ms)
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2770ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2060ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2680ms)
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4139ms)
+  Rendered layouts/_sidenavigation.html.erb (0.8ms)
+Completed 200 OK in 8ms (Views: 6.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:47:01 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wxHI2Bfj6dh0AnSSXEBni/lCepv5nIYaJR2WMX4SV7k="}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5980ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2990ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:47:01 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:47:01 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 7.9ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:47:01 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:47:05 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t81X+8pg3UmsDd3OmsPjOuPy1Qo1FUQ949NE2vQwfDY=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8252ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.6192ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:16:27 UTC, "current_sign_in_at"=>2016-03-31 05:17:05 UTC, "sign_in_count"=>7, "updated_at"=>2016-03-31 05:17:05 UTC}} flags=[] (0.1159ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:47:05 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3362ms)
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2551ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2508ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2832ms)
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.5238ms)
+  Rendered layouts/_sidenavigation.html.erb (0.9ms)
+Completed 200 OK in 59ms (Views: 57.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:47:06 +0530
+Processing by Devise::SessionsController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6440ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3262ms)
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:47:41 +0530
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1618ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2978ms)
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4029ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2801ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2687ms)
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4070ms)
+  Rendered layouts/_sidenavigation.html.erb (0.7ms)
+Completed 200 OK in 8ms (Views: 5.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:47:43 +0530
+Processing by Devise::SessionsController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5000ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2890ms)
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:47:45 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YEYtEYhAlnJELcFnjJJJ8QHcWUT2DkJTERGWmtToT4U="}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3910ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:47:45 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:47:45 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.2ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:47:45 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/myTrips" for 127.0.0.1 at 2016-03-31 10:47:50 +0530
+Processing by HomeController#myTrips as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:47:50 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:47:51 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:47:57 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PwzeL62eXqJoTP0AVbVUJLS0gjnjIhDOHpbzvfJCyxg=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6962ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4129ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:17:05 UTC, "current_sign_in_at"=>2016-03-31 05:17:57 UTC, "sign_in_count"=>8, "updated_at"=>2016-03-31 05:17:57 UTC}} flags=[] (0.1838ms)
+Redirected to http://localhost:3000/myTrips
+Completed 302 Found in 27ms
+
+
+Started GET "/myTrips" for 127.0.0.1 at 2016-03-31 10:47:57 +0530
+Processing by HomeController#myTrips as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4988ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.7951ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4320ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (4.6182ms)
+  Rendered home/myTrips.html.erb within layouts/application (10.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4580ms)
+  Rendered layouts/_sidenavigation.html.erb (1.0ms)
+Completed 200 OK in 114ms (Views: 17.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:48:02 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"itgOqMUZLWCalXtxCNESHSAg/YMwO16gLTIvX3Q9pYQ="}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4108ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:48:02 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:48:02 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:48:02 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:48:07 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UMx/h9mY0dAZ/XOiebCx2+6XTstV6DVmap1jWUWTeb8=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7200ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.8199ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:17:57 UTC, "current_sign_in_at"=>2016-03-31 05:18:07 UTC, "sign_in_count"=>9, "updated_at"=>2016-03-31 05:18:07 UTC}} flags=[] (3.0129ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:48:07 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (1.3669ms)
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3889ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2868ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2432ms)
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.3729ms)
+  Rendered layouts/_sidenavigation.html.erb (0.7ms)
+Completed 200 OK in 8ms (Views: 5.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:48:09 +0530
+Processing by Devise::SessionsController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5000ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2849ms)
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:48:16 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"itgOqMUZLWCalXtxCNESHSAg/YMwO16gLTIvX3Q9pYQ="}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3710ms)
+WARNING: Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:48:16 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:48:16 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:48:16 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:48:22 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ypoRKJKLXGZV17QZC+T765xblCQJqMUFbTMB5A6xu3Q=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4678ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:18:07 UTC, "current_sign_in_at"=>2016-03-31 05:18:22 UTC, "sign_in_count"=>10, "updated_at"=>2016-03-31 05:18:22 UTC}} flags=[] (0.1190ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:48:22 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3691ms)
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3171ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3018ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3040ms)
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.6630ms)
+  Rendered layouts/_sidenavigation.html.erb (1.4ms)
+Completed 200 OK in 13ms (Views: 10.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:48:24 +0530
+Processing by Devise::SessionsController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1659ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3059ms)
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:48:25 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tmhEg9hR1gizvxjt95N3rgh3svEK/suFhfQf8srrA24="}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4389ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:48:25 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:48:25 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:48:25 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:48:35 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UwvVYayVoHIiIA3NSzZdLakZgr38l3ya7spgaKPMM3s=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4549ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:18:22 UTC, "current_sign_in_at"=>2016-03-31 05:18:35 UTC, "sign_in_count"=>11, "updated_at"=>2016-03-31 05:18:35 UTC}} flags=[] (0.4542ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:48:35 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3121ms)
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4508ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3431ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2708ms)
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.3870ms)
+  Rendered layouts/_sidenavigation.html.erb (0.7ms)
+Completed 200 OK in 8ms (Views: 6.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:48:36 +0530
+Processing by Devise::SessionsController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6332ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3018ms)
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:48:38 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hugFGo+xeEoJCijYoxtueCnX2i3PGSDSdr+dlPNlR7I="}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4559ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:48:38 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:48:38 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.4ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:48:38 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/newTrip" for 127.0.0.1 at 2016-03-31 10:53:01 +0530
+Processing by HomeController#newTrip as HTML
+Completed 401 Unauthorized in 5ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:01 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.4ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:01 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:06 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zy1m+TkM9JDrHrxGFP/F2n73Kx5GmnI4ToUZpI3BXho=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6533ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3769ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:18:35 UTC, "current_sign_in_at"=>2016-03-31 05:23:06 UTC, "sign_in_count"=>12, "updated_at"=>2016-03-31 05:23:06 UTC}} flags=[] (0.1171ms)
+Redirected to http://0.0.0.0:3000/newTrip
+Completed 302 Found in 24ms
+
+
+Started GET "/newTrip" for 127.0.0.1 at 2016-03-31 10:53:06 +0530
+Processing by HomeController#newTrip as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3610ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2270ms)
+  Rendered home/newTrip.html.erb within layouts/application (89.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.5152ms)
+  Rendered layouts/_sidenavigation.html.erb (1.1ms)
+Completed 200 OK in 98ms (Views: 96.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:53:17 +0530
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5319ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3028ms)
+Processing by HomeController#myTrips as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3281ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2441ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.1871ms)
+  Rendered home/myTrips.html.erb within layouts/application (57.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.5283ms)
+  Rendered layouts/_sidenavigation.html.erb (1.1ms)
+Completed 200 OK in 80ms (Views: 64.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:53:20 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qQY/FjZSmLw0GWL1jTVaGR99RJjmwgpsNbbmUGelA7M="}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7272ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3929ms)
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 5ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:53:20 +0530
+Processing by HomeController#myTrips as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:20 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 5.0ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:20 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:27 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DFLdKPerurXCDH+24GWsu8bhSy/4O0t1DINRrGJRuqQ=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4764ms)
+Completed 401 Unauthorized in 20ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DFLdKPerurXCDH+24GWsu8bhSy/4O0t1DINRrGJRuqQ=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 81ms (Views: 5.3ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:28 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:32 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DFLdKPerurXCDH+24GWsu8bhSy/4O0t1DINRrGJRuqQ=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6070ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3428ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:23:06 UTC, "current_sign_in_at"=>2016-03-31 05:23:32 UTC, "sign_in_count"=>13, "updated_at"=>2016-03-31 05:23:32 UTC}} flags=[] (0.1109ms)
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 26ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:53:32 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3462ms)
+Processing by HomeController#myTrips as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3579ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2670ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.1420ms)
+  Rendered home/myTrips.html.erb within layouts/application (6.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4261ms)
+  Rendered layouts/_sidenavigation.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 11.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:53:37 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e5RK/+IqlksuSCEu/2Zph7Jgebq7dCDGWy+AYVThZZc="}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6382ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3631ms)
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:53:37 +0530
+Processing by HomeController#myTrips as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:37 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:37 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:42 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZUXy0dARIpVlLQidIHkqRKGTWfPJJGKlTGysAkDsZsc=", "user"=>{"email"=>"rohankatyal29@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"email"=>"rohankatyal29@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4408ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:23:32 UTC, "current_sign_in_at"=>2016-03-31 05:23:42 UTC, "sign_in_count"=>14, "updated_at"=>2016-03-31 05:23:42 UTC}} flags=[] (0.1721ms)
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 27ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:53:42 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5200ms)
+Processing by HomeController#myTrips as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.3402ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.3728ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fa208a5ab5fd6c86000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.1141ms)
+  Rendered home/myTrips.html.erb within layouts/application (6.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4530ms)
+  Rendered layouts/_sidenavigation.html.erb (1.1ms)
+Completed 200 OK in 91ms (Views: 85.2ms)
+
+
+Started GET "/logIn.html" for 127.0.0.1 at 2016-03-31 10:53:48 +0530
+
+ActionController::RoutingError (No route matches [GET] "/logIn.html"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:53:51 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cT67JUQOMCYN2cYS+FzeBa/w8ZzHxHJjSXvDKtvBUTE="}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fa208a5ab5fd6c86000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5131ms)
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:53:51 +0530
+Processing by HomeController#myTrips as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:51 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 8.8ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:51 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users/signin.html" for 127.0.0.1 at 2016-03-31 10:53:52 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signin"}
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:52 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.8ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:52 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/signin.html" for 127.0.0.1 at 2016-03-31 10:53:56 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signin"}
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:56 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.3ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:56 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/signin.html" for 127.0.0.1 at 2016-03-31 10:53:56 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signin"}
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:56 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 9.3ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:56 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/signin.html" for 127.0.0.1 at 2016-03-31 10:53:57 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signin"}
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:57 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:57 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/signin.html" for 127.0.0.1 at 2016-03-31 10:53:57 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signin"}
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:57 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:57 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/signin.html" for 127.0.0.1 at 2016-03-31 10:53:58 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signin"}
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:58 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.3ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:58 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/signin.html" for 127.0.0.1 at 2016-03-31 10:53:58 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signin"}
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:53:58 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.6ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:53:58 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:54:22 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 7.5ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:54:22 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users/sign_up.html" for 127.0.0.1 at 2016-03-31 10:54:23 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 80ms (Views: 79.2ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:54:23 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/css/main.css" for 127.0.0.1 at 2016-03-31 10:54:23 +0530
+
+ActionController::RoutingError (No route matches [GET] "/users/css/main.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-31 10:54:42 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C/tHy0jkzJrM6DnDhbQa+sxLzVCnuUppiUIpH32QzGo=", "user"=>{"name"=>"boo", "email"=>"yeah@gmail.com", "level"=>"boss", "gender"=>"obviously male ", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"email"=>"yeah@gmail.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (3.8550ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=savo collection=users documents=[{"_id"=>"56fcb49a5ab5fd26d0000002", "email"=>"yeah@gmail.com", "encrypted_password"=>"$2a$10$92WWPgg9B3k1wSewu630fuF9nkpcm4LtLpp2Ct.nxeJm37NXEopYm", "sign_in_count"=>0, "points"=>0, "level"=>"boss", "gender"=>"obviously male ", "max_hotel"=>"3_star", "max_flight"=>"economy", "name"=>"boo", "updated_at"=>2016-03-31 05:24:42 UTC, "created_at"=>2016-03-31 05:24:42 UTC}] flags=[] (0.2720ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fcb49a5ab5fd26d0000002"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:24:42 UTC, "current_sign_in_at"=>2016-03-31 05:24:42 UTC, "last_sign_in_ip"=>"127.0.0.1", "current_sign_in_ip"=>"127.0.0.1", "sign_in_count"=>1, "updated_at"=>2016-03-31 05:24:42 UTC}} flags=[] (0.1030ms)
+Redirected to http://0.0.0.0:3000/users/signin.html
+Completed 302 Found in 86ms
+
+
+Started GET "/users/signin.html" for 127.0.0.1 at 2016-03-31 10:54:42 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signin"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fcb49a5ab5fd26d0000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (1.0009ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"signin"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5960ms)
+Completed 404 Not Found in 7ms
+
+Mongoid::Errors::DocumentNotFound - 
+Problem:
+  Document(s) not found for class User with id(s) signin.
+Summary:
+  When calling User.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): signin ... (1 total) and the following ids were not found: signin.
+Resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.:
+  mongoid (3.1.7) lib/mongoid/criteria.rb:470:in `check_for_missing_documents!'
+  mongoid (3.1.7) lib/mongoid/criterion/findable.rb:20:in `execute_or_raise'
+  mongoid (3.1.7) lib/mongoid/criterion/findable.rb:40:in `find'
+  mongoid (3.1.7) lib/mongoid/finders.rb:85:in `find'
+  app/controllers/users_controller.rb:9:in `show'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:425:in `_run__599785508461928958__process_action__4431501855848551473__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  mongoid (3.1.7) lib/rack/mongoid/middleware/identity_map.rb:34:in `block in call'
+  mongoid (3.1.7) lib/mongoid/unit_of_work.rb:39:in `unit_of_work'
+  mongoid (3.1.7) lib/rack/mongoid/middleware/identity_map.rb:34:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__1170715279237628870__call__2076073114086624740__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/209114a6a5365701/variables" for 127.0.0.1 at 2016-03-31 10:54:42 +0530
+
+
+Started GET "/users/signin.html" for 127.0.0.1 at 2016-03-31 10:55:09 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signin"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fcb49a5ab5fd26d0000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3822ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb49a5ab5fd26d0000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2251ms)
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.5500ms)
+  Rendered layouts/_sidenavigation.html.erb (1.1ms)
+Completed 200 OK in 16ms (Views: 8.6ms)
+
+
+Started GET "/users/Savo_logo.png" for 127.0.0.1 at 2016-03-31 10:55:10 +0530
+Processing by UsersController#show as PNG
+  Parameters: {"id"=>"Savo_logo"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6089ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fcb49a5ab5fd26d0000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2780ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb49a5ab5fd26d0000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2482ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate - Missing template users/show, application/show with {:locale=>[:en], :formats=>[:png], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/MacbookPro/Desktop/dev/save_kg/rails3-mongoid-devise/app/views"
+  * "/usr/local/bin/ruby/2.0.0/gems/devise-3.5.6/app/views"
+:
+  actionpack (3.2.14) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.14) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.14) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:425:in `_run__599785508461928958__process_action__4431501855848551473__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  mongoid (3.1.7) lib/rack/mongoid/middleware/identity_map.rb:34:in `block in call'
+  mongoid (3.1.7) lib/mongoid/unit_of_work.rb:39:in `unit_of_work'
+  mongoid (3.1.7) lib/rack/mongoid/middleware/identity_map.rb:34:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__1170715279237628870__call__2076073114086624740__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-03-31 10:55:14 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"C/tHy0jkzJrM6DnDhbQa+sxLzVCnuUppiUIpH32QzGo="}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fcb49a5ab5fd26d0000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3870ms)
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:55:14 +0530
+Processing by HomeController#myTrips as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-03-31 10:55:14 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 8.2ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:55:14 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/sign_up.html" for 127.0.0.1 at 2016-03-31 10:55:16 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 10.6ms)
+
+
+Started GET "/bower_components/datatables-responsive/css/dataTables.responsive.css" for 127.0.0.1 at 2016-03-31 10:55:16 +0530
+
+ActionController::RoutingError (No route matches [GET] "/bower_components/datatables-responsive/css/dataTables.responsive.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/css/main.css" for 127.0.0.1 at 2016-03-31 10:55:16 +0530
+
+ActionController::RoutingError (No route matches [GET] "/users/css/main.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/bin/ruby/2.0.0/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-31 10:55:44 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0K++761bbT9m1cYDauOWekmYBXlMfe7NJam94bfyjxk=", "user"=>{"name"=>"toy", "email"=>"toy@gmail.com", "level"=>"toy", "gender"=>"male", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"email"=>"toy@gmail.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3541ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=savo collection=users documents=[{"_id"=>"56fcb4d85ab5fd7549000003", "email"=>"toy@gmail.com", "encrypted_password"=>"$2a$10$8EDTHtCfwleOA4eEEzIVr.eBEE6kEZvzYBqYeC3w.1W8TGPTJ9tBO", "sign_in_count"=>0, "points"=>0, "level"=>"toy", "gender"=>"male", "max_hotel"=>"3_star", "max_flight"=>"economy", "name"=>"toy", "updated_at"=>2016-03-31 05:25:44 UTC, "created_at"=>2016-03-31 05:25:44 UTC}] flags=[] (0.1280ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} update={"$set"=>{"last_sign_in_at"=>2016-03-31 05:25:44 UTC, "current_sign_in_at"=>2016-03-31 05:25:44 UTC, "last_sign_in_ip"=>"127.0.0.1", "current_sign_in_ip"=>"127.0.0.1", "sign_in_count"=>1, "updated_at"=>2016-03-31 05:25:44 UTC}} flags=[] (0.0899ms)
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 103ms
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-31 10:55:44 +0530
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fcb4d85ab5fd7549000003"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3479ms)
+Processing by HomeController#myTrips as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2890ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3252ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5162ms)
+  Rendered home/myTrips.html.erb within layouts/application (1.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (1.3039ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[280194485553] (0.0830ms)
+  Rendered layouts/_sidenavigation.html.erb (2.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms)
+
+
+Started GET "/newTrip" for 127.0.0.1 at 2016-03-31 10:55:49 +0530
+Processing by HomeController#newTrip as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6678ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fcb4d85ab5fd7549000003"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3300ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2861ms)
+  Rendered home/newTrip.html.erb within layouts/application (42.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4718ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[279241474613] (0.0632ms)
+  Rendered layouts/_sidenavigation.html.erb (1.1ms)
+Completed 200 OK in 107ms (Views: 101.7ms)
+
+
+Started POST "/fetchTripBookingDetails" for 127.0.0.1 at 2016-03-31 10:56:02 +0530
+Processing by HomeController#fetchTripBookingDetails as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0K++761bbT9m1cYDauOWekmYBXlMfe7NJam94bfyjxk=", "tripName"=>"FIRST", "tripType"=>"One Way", "flightFrom"=>"Jodhpur (JDH)", "flightLeaveDate"=>"2016-06-04", "flightTo"=>"Delhi (DEL)", "flightReturnDate"=>"2016-06-25", "accomodationWhere"=>"", "accomodationCheckIn"=>"", "accomodationCheckOut"=>"", "carPickUp"=>"", "carPickUpDateAndTime"=>"", "carDropOffDateAndTime"=>"", "commit"=>"Generate Budget To Beat"}
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fcb4d85ab5fd7549000003"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3917ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2532ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2480ms)
+  Rendered home/fetchTripBookingDetails.html.erb within layouts/application (1.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4742ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[281141550737] (0.0670ms)
+  Rendered layouts/_sidenavigation.html.erb (1.2ms)
+Completed 200 OK in 6036ms (Views: 7.5ms)
+
+
+Started POST "/storeTripDetails" for 127.0.0.1 at 2016-03-31 10:56:15 +0530
+Processing by HomeController#storeTripDetails as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0K++761bbT9m1cYDauOWekmYBXlMfe7NJam94bfyjxk=", "flightGoing"=>"2", "flightComing"=>"6", "commit"=>"Confirm Trip Details"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6771ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fcb4d85ab5fd7549000003"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2887ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2670ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2489ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=savo collection=trips documents=[{"_id"=>"56fcb4f75ab5fda5b0000004", "budget_to_beat"=>7162, "trip_status"=>"upcoming", "travel_type"=>"round_trip", "city_from"=>"JDH", "city_to"=>"DEL", "leave_date"=>2016-06-04 00:00:00 UTC, "return_date"=>2016-06-04 00:00:00 UTC, "travel_cost"=>123, "hotel_name"=>"", "hotel_category"=>"4_star", "hotel_city"=>"", "check_in"=>2016-03-31 05:25:44 UTC, "check_out"=>2016-03-31 05:25:44 UTC, "hotel_cost"=>0, "vehicle_name"=>"", "pick_up_location"=>"", "pick_up"=>2016-03-31 05:25:44 UTC, "drop"=>2016-03-31 05:25:44 UTC, "car_cost"=>0, "name"=>"FIRST", "user_id"=>"56fcb4d85ab5fd7549000003", "updated_at"=>2016-03-31 05:26:15 UTC, "created_at"=>2016-03-31 05:26:15 UTC}] flags=[] (0.2019ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4339ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4263ms)
+  Rendered home/myTrips.html.erb within layouts/application (1.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4730ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[280125688707] (0.1051ms)
+  Rendered layouts/_sidenavigation.html.erb (1.3ms)
+Completed 200 OK in 17ms (Views: 7.6ms)
+
+
+Started POST "/storeTripDetails" for 127.0.0.1 at 2016-03-31 10:57:29 +0530
+Processing by HomeController#storeTripDetails as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0K++761bbT9m1cYDauOWekmYBXlMfe7NJam94bfyjxk=", "flightGoing"=>"2", "flightComing"=>"6", "commit"=>"Confirm Trip Details"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5682ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fcb4d85ab5fd7549000003"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4978ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2511ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2561ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=savo collection=trips documents=[{"_id"=>"56fcb5415ab5fd0bd0000005", "budget_to_beat"=>7162, "trip_status"=>"upcoming", "travel_type"=>"round_trip", "city_from"=>"JDH", "city_to"=>"DEL", "leave_date"=>2016-06-04 00:00:00 UTC, "return_date"=>2016-06-04 00:00:00 UTC, "travel_cost"=>123, "hotel_name"=>"", "hotel_category"=>"4_star", "hotel_city"=>"", "check_in"=>2016-03-31 05:25:44 UTC, "check_out"=>2016-03-31 05:25:44 UTC, "hotel_cost"=>0, "vehicle_name"=>"", "pick_up_location"=>"", "pick_up"=>2016-03-31 05:25:44 UTC, "drop"=>2016-03-31 05:25:44 UTC, "car_cost"=>0, "name"=>"FIRST", "user_id"=>"56fcb4d85ab5fd7549000003", "updated_at"=>2016-03-31 05:27:29 UTC, "created_at"=>2016-03-31 05:27:29 UTC}] flags=[] (0.1230ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2470ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3588ms)
+  Rendered home/myTrips.html.erb within layouts/application (1.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.5038ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[279715988654] (0.0670ms)
+  Rendered layouts/_sidenavigation.html.erb (1.3ms)
+Completed 200 OK in 14ms (Views: 7.1ms)
+
+
+Started POST "/storeTripDetails" for 127.0.0.1 at 2016-03-31 10:57:33 +0530
+Processing by HomeController#storeTripDetails as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0K++761bbT9m1cYDauOWekmYBXlMfe7NJam94bfyjxk=", "flightGoing"=>"2", "flightComing"=>"6", "commit"=>"Confirm Trip Details"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.3840ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{"_id"=>"56fcb4d85ab5fd7549000003"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.7050ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5620ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2558ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=savo collection=trips documents=[{"_id"=>"56fcb5455ab5fde4bc000006", "budget_to_beat"=>7162, "trip_status"=>"upcoming", "travel_type"=>"round_trip", "city_from"=>"JDH", "city_to"=>"DEL", "leave_date"=>2016-06-04 00:00:00 UTC, "return_date"=>2016-06-04 00:00:00 UTC, "travel_cost"=>123, "hotel_name"=>"", "hotel_category"=>"4_star", "hotel_city"=>"", "check_in"=>2016-03-31 05:25:44 UTC, "check_out"=>2016-03-31 05:25:44 UTC, "hotel_cost"=>0, "vehicle_name"=>"", "pick_up_location"=>"", "pick_up"=>2016-03-31 05:25:44 UTC, "drop"=>2016-03-31 05:25:44 UTC, "car_cost"=>0, "name"=>"FIRST", "user_id"=>"56fcb4d85ab5fd7549000003", "updated_at"=>2016-03-31 05:27:33 UTC, "created_at"=>2016-03-31 05:27:33 UTC}] flags=[] (0.1292ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2763ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=trips selector={"user_id"=>"56fcb4d85ab5fd7549000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4969ms)
+  Rendered home/myTrips.html.erb within layouts/application (2.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=savo collection=users selector={"$query"=>{}, "$orderby"=>{"points"=>-1}} flags=[:slave_ok] limit=3 skip=0 batch_size=nil fields=nil (0.4778ms)
+  MOPED: 127.0.0.1:27017 KILL_CURSORS cursor_ids=[281016937978] (0.0608ms)
+  Rendered layouts/_sidenavigation.html.erb (1.1ms)
+Completed 200 OK in 18ms (Views: 7.9ms)

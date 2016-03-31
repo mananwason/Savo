@@ -1,9 +1,9 @@
 Rails3MongoidDevise::Application.routes.draw do
   authenticated :user do
-    root :to => 'home#index'
+    root :to => 'home#myTrips'
   end
   
-  root :to => "home#index"
+  root :to => "home#myTrips"
 
   get 'rewards' => "home#rewards"
 
@@ -22,7 +22,7 @@ Rails3MongoidDevise::Application.routes.draw do
   post 'updateSettings' => "home#updateSettings"
 
   match 'fetchTripBookingDetails' => "home#fetchTripBookingDetails", via: [:get, :post]
-  
+
   devise_for :users
   resources :users
 end
