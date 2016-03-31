@@ -52,8 +52,9 @@ class User
 
   field :points, :type => Integer, :default => 0
   field :level, :type => String, :default => ""
+  field :gender, :type => String, :default => ""
   field :max_hotel, :type => String, :default => "3_star"
   field :max_flight, :type => String, :default => "economy"
   
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :created_at, :updated_at
+  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :created_at, :updated_at, :gender, :level
 end
