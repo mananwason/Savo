@@ -13,6 +13,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
         </button>
+<<<<<<< HEAD
         <a href="./myTrips.html"><img src="Savo_logo.png"></a>
     </div>       
     <!-- /.navbar-header -->
@@ -25,6 +26,64 @@
 
     </ul>
     <!-- /.navbar-top-links -->
+=======
+
+        <a href="./myTrips.html"><img src="./Savo_logo.png"></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right" style="margin-right: 10px">
+      <li><a href="#"><span class="glyphicon glyphicon-user" style="color:white"></span><font color="white"> 
+      <% if user_signed_in? %>
+        <%=current_user.name%>
+     <% end %>
+        </font></a></li>
+      
+      <li><a href="/users/sign_out" data-method="delete" rel="nofollow"><span class="glyphicon glyphicon-log-in" style="color:white"></span> <font color="white">Log out</font></a></li>
+    </ul> 
+            <!-- /.navbar-top-links -->
+
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-collapse">
+            <ul class="nav" id="side-menu">
+                <!-- <li class="sidebar-search">
+                    <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div> 
+               
+
+                </li> -->
+    
+                <li>
+                    <br>
+                    <br>
+                    <div class="text-center"><font size="7">
+                        <% if user_signed_in? %>
+                            <%=current_user.points%>
+                        <% end %>
+                    </font></div>
+                    <div class="text-center"><font size="4">points</font></div>
+                    <br>
+                    <br>
+                    <!-- <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a> -->
+                </li>
+                <li>
+                    <a href="./myTrips.html"><div class="text-center">My Trips</div></a>
+                </li>
+                <li>
+                    <a href="./rewards.html"><div class="text-center">Rewards</div></a>
+                </li>
+                <li>
+                    <a href="#"><div class="text-center">Settings</div></a>
+                </li>
+                <li>
+                    <a href="#"><div class="text-center">Help</div></a>
+                </li>
+                <br>
+>>>>>>> a lot of things that rohan did
 
     <div class="navbar-default sidebar" role="navigation" style="background-color: white;">
         <div class="sidebar-nav navbar-collapse">

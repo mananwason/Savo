@@ -54,7 +54,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">My Trips
-                        <a href="./newtrip2.html" role="button" class="btn btn-success btn-lg" style="float: right;"><i class="fa fa-plus-square"></i> New Trip</a></h1>
+                        <a href="/newTrip" role="button" class="btn btn-success btn-lg" style="float: right;"><i class="fa fa-plus-square"></i> New Trip</a></h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -63,7 +63,6 @@
                     <% @trips.each do |trip| %>
                         <hr style="border-top: dashed 1px;color:#333;">
                         <div class="panel panel-primary" style="border-color:#A43B40">
-
                             <% if trip.leave_date <= @todayDate %>
                                 <div class="panel-heading" style="background-color: #A43B40;border-color:#A43B40">
                                     <font size="4"><%= trip.name %></font>
