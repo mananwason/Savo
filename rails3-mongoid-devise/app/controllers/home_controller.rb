@@ -108,11 +108,13 @@ class HomeController < ApplicationController
   def myTrips
   	@user = User.find(current_user.id);
   	@todayDate = Date.parse(Time.now.to_s);
-  	@trips = @user.trips;
-    @trips.each_index do |i|
-      @trips[i]["pick_up_2"] = Date.parse(@trips[i]["pick_up"].to_s).strftime('%a %b %d %Y')
-      @trips[i]["drop_2"] = Date.parse(@trips[i]["drop"].to_s).strftime('%a %b %d %Y')
-    end
+  	@trips = @user.trips.order_by(:leave_date => 'desc')
+
+    # @trips.each_index do |i|
+    #   @trips[i]["pick_up_2"] = Date.parse(@trips[i]["pick_up"].to_s).strftime('%a %b %d %Y')
+    #   @trips[i]["drop_2"] = Date.parse(@trips[i]["drop"].to_s).strftime('%a %b %d %Y')
+    # end
+
   	render "myTrips"
   end
 
@@ -174,7 +176,7 @@ class HomeController < ApplicationController
 			      {
 			        origin: params["flightTo"].split("(")[1].split(")")[0],
 			        destination: params["flightFrom"].split("(")[1].split(")")[0],
-			        date: params["flightLeaveDate"],
+			        date: params["flightReturnDate"],
 			        preferredCabin: 'COACH'
 			      }
 			    ],
@@ -191,7 +193,6 @@ class HomeController < ApplicationController
 			  }
 			}.to_json,
     :headers => { 'Accept' => 'application/json', 'Content-Type' => 'application/json' })
-
 
     url_hotel = "http://localhost:8081/api/hotels?"
     url_hotel = url_hotel + "city=" + params["accomodationWhere"].tr(' ', '') + "&checkIn=" + params["accomodationCheckIn"] + "&checkOut=" + params["accomodationCheckOut"] + "&guests=1&rooms=1"
@@ -298,8 +299,8 @@ class HomeController < ApplicationController
       hotel_category: hotel["rating"].to_i,
       vehicle_name: $car_data[:taxiServicesAvailable][temp1][:compName] + " " + carDetails[:typeName], 
       pick_up_location: $car_pick_up_location, 
-      pick_up: DateTime.parse($car_pick_up).strftime('%a %b %d %Y %H:%M'),
-      drop: DateTime.parse($car_drop).strftime('%a %b %d %Y %H:%M'), 
+      pick_up: DateTime.parse($car_pick_up),
+      drop: DateTime.parse($car_drop),
       car_cost: carDetails[:costPerDay].to_i * 60
     })
 

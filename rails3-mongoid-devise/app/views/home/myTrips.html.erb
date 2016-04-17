@@ -86,7 +86,7 @@
                                             <td align="center"><font size="3"><%= trip.hotel_name %>, <%= distance_of_time_in_words(trip.check_in, trip.check_out)%><br><i class="fa fa-inr"></i> <%= trip.hotel_cost * 68 %></font><br/>
                                             <font size="3px"><% 1.upto(trip.hotel_category) do |i|%><span class="glyphicon glyphicon-star" style="color: #E4BB24;"></span><% end %></font>
                                             </td>
-                                            <td align="center"><font size="3"> <%= trip.vehicle_name %>, <%= distance_of_time_in_words(trip.pick_up, trip.drop)%><br/><%= trip.pick_up_location %> on <%= trip.pick_up_2 %><br /><i class="fa fa-inr"></i> <%= trip.car_cost %> per day</font>
+                                            <td align="center"><font size="3"> <%= trip.vehicle_name %>, <%= distance_of_time_in_words(trip.pick_up, trip.drop)%><br/><%= trip.pick_up_location %> on <%= l(trip.pick_up)%><br /><i class="fa fa-inr"></i> <%= trip.car_cost %> per day</font>
                                           </tr>
                                         </tbody>
                                       </table>

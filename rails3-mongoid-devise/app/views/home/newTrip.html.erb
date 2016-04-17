@@ -74,7 +74,7 @@
                 
                     <div class="form-group form-inline" style='display: inline-block;'>
                         <label>Enter Trip Name  </label>
-                        <%= text_field_tag 'tripName',nil ,:class => "form-control form-inline", :placeholder => '', :style => 'margin-left: 10px;' %>
+                        <%= text_field_tag 'tripName',nil ,:class => "form-control form-inline", :placeholder => '', :style => 'margin-left: 10px;', :required => true %>
                     </div>
         
                 <br>
@@ -114,7 +114,7 @@
                                                 <div class="form-group">
                                                     <div class='input-group date' id='datetimepicker1'>
                                                     
-                                                    <%= text_field_tag 'flightLeaveDate', nil,  :class => "form-control" %> 
+                                                    <%= text_field_tag 'flightLeaveDate', nil,  :class => "form-control", :required => true%> 
                                                     
                                                     <span class="input-group-addon">
                                                         <span class="glyphicon glyphicon-calendar"></span>
@@ -135,7 +135,7 @@
                                                 <div class="form-group">
                                                     <div class='input-group date' id='datetimepicker2'>
                                                     
-                                                    <%= text_field_tag 'flightReturnDate', nil, :class => "form-control" %> 
+                                                    <%= text_field_tag 'flightReturnDate', nil, :required => true, :class => "form-control" %> 
 
                                                     <span class="input-group-addon">
                                                         <span class="glyphicon glyphicon-calendar"></span>
@@ -156,7 +156,7 @@
                                               <div class="form-group">
                                                 <label for="where">Where</label>
 
-                                                <%= text_field_tag 'accomodationWhere', nil, :class => "form-control", :id => 'usr' %>
+                                                <%= text_field_tag 'accomodationWhere', nil, :class => "form-control", :id => 'usr', :required => true %>
 
                                               </div>
                                               </div>
@@ -166,7 +166,7 @@
                                                 <div class="form-group">
                                                     <div class='input-group date' id='datetimepicker3'>
                                                     
-                                                      <%= text_field_tag 'accomodationCheckIn', nil, :class => "form-control" %>
+                                                      <%= text_field_tag 'accomodationCheckIn', nil, :class => "form-control", :required => true%>
 
 
                                                     <span class="input-group-addon">
@@ -177,7 +177,7 @@
                                                 <div class="form-group">
                                                     <div class='input-group date' id='datetimepicker4'>
 
-                                                    <%= text_field_tag 'accomodationCheckOut', nil, :class => "form-control" %>
+                                                    <%= text_field_tag 'accomodationCheckOut', nil, :class => "form-control", :required => true%>
                                                     <span class="input-group-addon">
                                                         <span class="glyphicon glyphicon-calendar"></span>
                                                     </span>
