@@ -194,7 +194,7 @@ class HomeController < ApplicationController
 
 
     url_hotel = "http://localhost:8081/api/hotels?"
-    url_hotel = url_hotel + "city=" + params["accomodationWhere"] + "&checkIn=" + params["accomodationCheckIn"] + "&checkOut=" + params["accomodationCheckOut"] + "&guests=1&rooms=1"
+    url_hotel = url_hotel + "city=" + params["accomodationWhere"].tr(' ', '') + "&checkIn=" + params["accomodationCheckIn"] + "&checkOut=" + params["accomodationCheckOut"] + "&guests=1&rooms=1"
 
     @hotel_response = HTTParty.get(url_hotel)
 
@@ -235,7 +235,7 @@ class HomeController < ApplicationController
       end
     end
 
-    @budgetToBeat = total_going.percentile(20) + total_coming.percentile(20) + hotel_array.percentile(20) + car_data_array.percentile(20)
+    @budgetToBeat = (total_going.percentile(20) + total_coming.percentile(20) + hotel_array.percentile(20) + car_data_array.percentile(20)).to_i
 
     ## for next step
     $result_going_global = @result_coming
